@@ -1969,8 +1969,8 @@
     </message>
     <message>
         <location filename="../menu.py" line="2259"/>
-        <source>https://classwidgets.rinlit.cn/docs-user/</source>
-        <translation>https://classwidgets.rinlit.cn/docs-user/</translation>
+        <source>https://docs.cwce.hpdnya.com/about/</source>
+        <translation>https://docs.cwce.hpdnya.com/about/</translation>
     </message>
     <message>
         <location filename="../menu.py" line="2313"/>

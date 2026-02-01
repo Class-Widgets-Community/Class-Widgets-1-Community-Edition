@@ -2256,7 +2256,7 @@ class SettingsMenu(FluentWindow):
         open_by_browser.setIcon(fIcon.LINK)
         open_by_browser.clicked.connect(
             lambda: QDesktopServices.openUrl(
-                QUrl(self.tr('https://classwidgets.rinlit.cn/docs-user/'))
+                QUrl(self.tr('https://docs.cwce.hpdnya.com/about/'))
             )
         )
 

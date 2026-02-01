@@ -1931,7 +1931,7 @@
     </message>
     <message>
         <location filename="../menu.py" line="2259"/>
-        <source>https://classwidgets.rinlit.cn/docs-user/</source>
+        <source>https://docs.cwce.hpdnya.com/about/</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
