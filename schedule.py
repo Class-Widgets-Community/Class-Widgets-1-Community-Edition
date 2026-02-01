@@ -269,7 +269,12 @@ class ClassWidgetsScheduleVersion1Provider(ScheduleProvider):
         # 正在上课 -> status=1
         if not self._cache_status:
             start, duration, names = lessons_today[idx]
-            return 1, (start + duration - current_time_in_seconds), float(duration), '、'.join(names)
+            return (
+                1,
+                (start + duration - current_time_in_seconds),
+                float(duration),
+                '、'.join(names),
+            )
         # 处于课间或无课
         # 在第一节之前 -> status=2
         if idx == 0:
@@ -295,7 +300,12 @@ class ClassWidgetsScheduleVersion1Provider(ScheduleProvider):
         # 正在上课 -> status=1
         if not self._cache_status:
             start, duration, names = lessons_today[idx]
-            return 1, (start + duration - current_time_in_seconds), float(duration), '、'.join(names)
+            return (
+                1,
+                (start + duration - current_time_in_seconds),
+                float(duration),
+                '、'.join(names),
+            )
         # 处于课间或无课
         if idx == 0:
             next_start, next_duration, _ = lessons_today[0]
@@ -431,13 +441,6 @@ class NotificationManager:
     def _provide_notification(self, idx: int) -> None:
         assert self.next_lessons is not None
         assert self.current_lesson_name is not None
-        # if idx == -1:
-        #     if self.next_lessons:
-        #         tip_toast.push_notification(0, self.next_lessons[0])
-        #     else:
-        #         tip_toast.push_notification(2, '')
-        # else:
-        #     tip_toast.push_notification(1, self.current_lesson_name)
         assert self.status is not None
         assert self.status != 2
         if self.status == 1:
