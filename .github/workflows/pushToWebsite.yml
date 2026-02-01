@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Check Repository
         run: |
-          if [ "${{ github.repository }}" != "Class-Widgets/Class-Widgets" ]; then
+          if [ "${{ github.repository }}" != "Class-Widgets-Community/Class-Widgets-1-Community-Edition" ]; then
             echo "[DEBUG] 工作流不在主仓库"
             exit 1
           fi
@@ -28,4 +28,4 @@ jobs:
                -H "Authorization: Bearer $GH_TOKEN" \
                -H "Content-Type: application/json" \
                -d "{\"event_type\": \"update-version\"}" \
-               https://api.github.com/repos/Class-Widgets/official_website/dispatches
+               https://api.github.com/repos/Class-Widgets-Community/official_website/dispatches

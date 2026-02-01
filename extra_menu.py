@@ -231,7 +231,7 @@ class ExtraMenu(FluentWindow):
         self.move(int(screen_width / 2 - width / 2), 150)
         self.resize(width, height)
 
-        self.setWindowTitle('Class Widgets - 更多功能')
+        self.setWindowTitle('Class Widgets Community Edition - 更多功能')
         self.setWindowIcon(QIcon(str(CW_HOME / 'img/logo/favicon-exmenu.ico')))
 
         self.addSubInterface(self.interface, fIcon.INFO, '更多设置')

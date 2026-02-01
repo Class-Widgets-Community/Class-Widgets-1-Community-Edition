@@ -1816,7 +1816,7 @@
               <item>
                <widget class="CaptionLabel" name="CaptionLabel_12">
                 <property name="text">
-                 <string>若启用，Class Widgets 将在程序崩溃时自动忽略，并不再弹出窗口；以免影响教学任务。</string>
+                 <string>若启用，Class Widgets Community Edition 将在程序崩溃时自动忽略，并不再弹出窗口；以免影响教学任务。</string>
                 </property>
                 <property name="wordWrap">
                  <bool>true</bool>

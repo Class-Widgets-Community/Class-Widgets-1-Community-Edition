@@ -172,13 +172,13 @@ You can add more voice in system settings (*≧▽≦)</translation>
     <name>ErrorDialog</name>
     <message>
         <location filename="../main.py" line="795"/>
-        <source>Class Widgets 崩溃报告</source>
-        <translation>Class Widgets crash report</translation>
+        <source>Class Widgets Community Edition 崩溃报告</source>
+        <translation>Class Widgets Community Edition crash report</translation>
     </message>
     <message>
         <location filename="../main.py" line="796"/>
-        <source>抱歉！Class Widgets 发生了严重的错误从而无法正常运行。您可以保存下方的错误信息并向他人求助。若您认为这是程序的Bug，请点击“报告此问题”或联系开发者。</source>
-        <translation>Sorry! Class Widgets has encountered a critical error and cannot run. You can save the error details below and seek help. If this appears to be a bug, please click &apos;Report&apos; or contact the developer.</translation>
+        <source>抱歉！Class Widgets Community Edition 发生了严重的错误从而无法正常运行。您可以保存下方的错误信息并向他人求助。若您认为这是程序的Bug，请点击“报告此问题”或联系开发者。</source>
+        <translation>Sorry! Class Widgets Community Edition has encountered a critical error and cannot run. You can save the error details below and seek help. If this appears to be a bug, please click &apos;Report&apos; or contact the developer.</translation>
     </message>
     <message>
         <location filename="../main.py" line="815"/>
@@ -346,13 +346,13 @@ You can add more voice in system settings (*≧▽≦)</translation>
     </message>
     <message>
         <location filename="../view/menu/about.ui" line="118"/>
-        <source>Class Widgets</source>
-        <translation>Class Widgets</translation>
+        <source>Class Widgets Community Edition</source>
+        <translation>Class Widgets Community Edition</translation>
     </message>
     <message>
         <location filename="../view/menu/about.ui" line="128"/>
-        <source>Class Widgets 是一款能显示当前课程的桌面组件App。其提供了直观的图形化课程表编辑和美观的桌面组件。</source>
-        <translation>Class Widgets is a desktop component App that can display the current course. It provides intuitive graphical course schedule editing and beautiful desktop components.</translation>
+        <source>Class Widgets Community Edition 是一款能显示当前课程的桌面组件App。其提供了直观的图形化课程表编辑和美观的桌面组件。</source>
+        <translation>Class Widgets Community Edition is a desktop component App that can display the current course. It provides intuitive graphical course schedule editing and beautiful desktop components.</translation>
     </message>
     <message>
         <location filename="../view/menu/about.ui" line="232"/>
@@ -399,7 +399,7 @@ You can add more voice in system settings (*≧▽≦)</translation>
     <message>
         <location filename="../view/menu/about.ui" line="450"/>
         <source>翻译此应用</source>
-        <translation>Translate Class Widgets</translation>
+        <translation>Translate Class Widgets Community Edition</translation>
     </message>
     <message>
         <location filename="../view/menu/about.ui" line="485"/>
@@ -428,13 +428,13 @@ You can add more voice in system settings (*≧▽≦)</translation>
     </message>
     <message>
         <location filename="../view/menu/about.ui" line="660"/>
-        <source>启动 Class Widgets 时自动检查更新</source>
-        <translation>Automatically check for updates when starting Class Widgets</translation>
+        <source>启动 Class Widgets Community Edition 时自动检查更新</source>
+        <translation>Automatically check for updates when starting Class Widgets Community Edition</translation>
     </message>
     <message>
         <location filename="../view/menu/about.ui" line="667"/>
-        <source>若启用，Class Widgets 将在启动时联网检查选定的更新通道中是否有最新版本更新。</source>
-        <translation>If enabled, Class Widgets will check on the network at startup to see if the selected update channel has the latest version updated.</translation>
+        <source>若启用，Class Widgets Community Edition 将在启动时联网检查选定的更新通道中是否有最新版本更新。</source>
+        <translation>If enabled, Class Widgets Community Edition will check on the network at startup to see if the selected update channel has the latest version updated.</translation>
     </message>
     <message>
         <location filename="../view/menu/advance.ui" line="152"/>
@@ -757,8 +757,8 @@ If disabled, clicking a widget is equivalent to clicking the window behind the w
     </message>
     <message>
         <location filename="../view/menu/advance.ui" line="1819"/>
-        <source>若启用，Class Widgets 将在程序崩溃时自动忽略，并不再弹出窗口；以免影响教学任务。</source>
-        <translation>If enabled, Class Widgets will be ignored when the program crashes and will not pop up any more.</translation>
+        <source>若启用，Class Widgets Community Edition 将在程序崩溃时自动忽略，并不再弹出窗口；以免影响教学任务。</source>
+        <translation>If enabled, Class Widgets Community Edition will be ignored when the program crashes and will not pop up any more.</translation>
     </message>
     <message>
         <location filename="../view/menu/advance.ui" line="1890"/>
@@ -849,20 +849,20 @@ If disabled, clicking a widget is equivalent to clicking the window behind the w
         <translation>Schedule</translation>
     </message>
     <message>
-        <source>导入 Class Widgets 课程表</source>
-        <translation type="vanished">Import Class Widgets schedule</translation>
+        <source>导入 Class Widgets Community Edition 课程表</source>
+        <translation type="vanished">Import Class Widgets Community Edition schedule</translation>
     </message>
     <message>
-        <source>需导入从其他 Class Widgets 导出的课程表</source>
-        <translation type="vanished">You need to import schedules exported from Class Widgets</translation>
+        <source>需导入从其他 Class Widgets Community Edition 导出的课程表</source>
+        <translation type="vanished">You need to import schedules exported from Class Widgets Community Edition</translation>
     </message>
     <message>
         <source>导入课程表</source>
         <translation type="vanished">Import</translation>
     </message>
     <message>
-        <source>导出 Class Widgets 课程表</source>
-        <translation type="vanished">Export Class Widgets schedule</translation>
+        <source>导出 Class Widgets Community Edition 课程表</source>
+        <translation type="vanished">Export Class Widgets Community Edition schedule</translation>
     </message>
     <message>
         <source>将当前使用的课程表文件 (.json) 导出</source>
@@ -873,12 +873,12 @@ If disabled, clicking a widget is equivalent to clicking the window behind the w
         <translation type="vanished">Export</translation>
     </message>
     <message>
-        <source>管理 Class Widgets 课程表</source>
-        <translation type="vanished">Manage Class Widgets schedules</translation>
+        <source>管理 Class Widgets Community Edition 课程表</source>
+        <translation type="vanished">Manage Class Widgets Community Edition schedules</translation>
     </message>
     <message>
-        <source>打开 Class Widgets 课程表文件夹</source>
-        <translation type="vanished">Open Class Widgets schedule folder</translation>
+        <source>打开 Class Widgets Community Edition 课程表文件夹</source>
+        <translation type="vanished">Open Class Widgets Community Edition schedule folder</translation>
     </message>
     <message>
         <location filename="../view/menu/plugin_mgr.ui" line="470"/>
@@ -899,9 +899,9 @@ If disabled, clicking a widget is equivalent to clicking the window behind the w
     </message>
     <message>
         <source>需导入从其他支持的软件导出的 CSES 格式的课程表
-注意：由 CSES 格式转换的 Class Widgets 课程表可读性可能降低</source>
+注意：由 CSES 格式转换的 Class Widgets Community Edition 课程表可读性可能降低</source>
         <translation type="vanished">Import course schedules in CSES format exported from other supported software
-Note: Class Widgets schedules converted from CSES format may be less readable</translation>
+Note: Class Widgets Community Edition schedules converted from CSES format may be less readable</translation>
     </message>
     <message>
         <source>导入 CSES 文件</source>
@@ -1786,7 +1786,7 @@ Use spaces to separate multiple strings</translation>
         <location filename="../view/pp/settings.ui" line="111"/>
         <source>在下载插件后，将为您自动启用插件以便您重启可以立即使用。
 但请确信您在“插件广场”中需要的插件是安全的。</source>
-        <translation>After downloading the plugins, they will be automatically enabled so that you can use them immediately after you restart Class Widgets.
+        <translation>After downloading the plugins, they will be automatically enabled so that you can use them immediately after you restart Class Widgets Community Edition.
 But make sure that the plugins you have downloaded in Plugin Plaza are secure please.</translation>
     </message>
     <message>
@@ -1931,8 +1931,8 @@ But make sure that the plugins you have downloaded in Plugin Plaza are secure pl
     </message>
     <message>
         <location filename="../plugin_plaza.py" line="372"/>
-        <source>为 Class Widgets 安装</source>
-        <translation>Install for Class Widgets</translation>
+        <source>为 Class Widgets Community Edition 安装</source>
+        <translation>Install for Class Widgets Community Edition</translation>
     </message>
     <message>
         <location filename="../plugin_plaza.py" line="375"/>
@@ -2224,8 +2224,8 @@ Make sure you have an Internet connection, otherwise you&apos;ll be lost (&gt;, 
     </message>
     <message>
         <location filename="../menu.py" line="3303"/>
-        <source>https://github.com/RinLit-233-shiroko/Class-Widgets</source>
-        <translation>https://github.com/Class-Widgets/Class-Widgets</translation>
+        <source>https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition</source>
+        <translation>https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition</translation>
     </message>
     <message>
         <location filename="../menu.py" line="3309"/>
@@ -2234,8 +2234,8 @@ Make sure you have an Internet connection, otherwise you&apos;ll be lost (&gt;, 
     </message>
     <message>
         <location filename="../menu.py" line="3326"/>
-        <source>https://github.com/RinLit-233-shiroko/Class-Widgets?tab=readme-ov-file#致谢</source>
-        <translation>https://github.com/Class-Widgets/Class-Widgets?tab=readme-ov-file#致谢</translation>
+        <source>https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition?tab=readme-ov-file#致谢</source>
+        <translation>https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition?tab=readme-ov-file#致谢</translation>
     </message>
     <message>
         <location filename="../menu.py" line="3354"/>
@@ -2850,10 +2850,10 @@ For details, please see the log located in ./log/.</translation>
     </message>
     <message>
         <source>课程表文件导入失败！
-可能为格式错误或文件损坏，请检查此文件是否为 Class Widgets 课程表文件。
+可能为格式错误或文件损坏，请检查此文件是否为 Class Widgets Community Edition 课程表文件。
 详情请查看Log日志，日志位于./log/下。</source>
         <translation type="vanished">Failed to import timetable file!
-This may be due to incorrect format or file corruption. Please check if this is a valid Class Widgets timetable file.
+This may be due to incorrect format or file corruption. Please check if this is a valid Class Widgets Community Edition timetable file.
 For details, please see the log located in ./log/.</translation>
     </message>
     <message>
@@ -3180,10 +3180,10 @@ For details, see Log, located under./log/.</translation>
     <message>
         <source>menu</source>
         <comment>课程表文件导入失败！
-可能为格式错误或文件损坏，请检查此文件是否为 Class Widgets 课程表文件。
+可能为格式错误或文件损坏，请检查此文件是否为 Class Widgets Community Edition 课程表文件。
 详情请查看Log日志，日志位于./log/下。</comment>
         <translation type="vanished">Import failed!
-There may be a format error or file corruption. Please check whether this file is a Class Widgets class table file.
+There may be a format error or file corruption. Please check whether this file is a Class Widgets Community Edition class table file.
 For details, see Log, located under./log/.</translation>
     </message>
     <message>
@@ -3307,8 +3307,8 @@ Save failed. Please submit the logs from ./log/ to the developer for troubleshoo
         <translation type="vanished">Can’t add any more o(TヘTo)</translation>
     </message>
     <message>
-        <source>Class Widgets 最多只能添加10个“节点”！</source>
-        <translation type="vanished">Class Widgets allows a maximum of 10 nodes!</translation>
+        <source>Class Widgets Community Edition 最多只能添加10个“节点”！</source>
+        <translation type="vanished">Class Widgets Community Edition allows a maximum of 10 nodes!</translation>
     </message>
     <message>
         <source>menu</source>
@@ -3399,8 +3399,8 @@ Saved to ./config.ini</translation>
     </message>
     <message>
         <location filename="../menu.py" line="6237"/>
-        <source>Class Widgets - 设置</source>
-        <translation>Class Widgets - Settings</translation>
+        <source>Class Widgets Community Edition - 设置</source>
+        <translation>Class Widgets Community Edition - Settings</translation>
     </message>
     <message>
         <location filename="../menu.py" line="6319"/>
@@ -3503,8 +3503,8 @@ Error occurred while switching component language: {e}</translation>
         <translation type="vanished">Welcome</translation>
     </message>
     <message>
-        <source>Class Widgets</source>
-        <translation type="vanished">Class Widgets</translation>
+        <source>Class Widgets Community Edition</source>
+        <translation type="vanished">Class Widgets Community Edition</translation>
     </message>
     <message>
         <source>v1.2.0.0 LTS</source>
@@ -3523,8 +3523,8 @@ Error occurred while switching component language: {e}</translation>
         <translation type="vanished">Release notes</translation>
     </message>
     <message>
-        <source>https://github.com/Class-Widgets/Class-Widgets/releases</source>
-        <translation type="vanished">https://github.com/Class-Widgets/Class-Widgets/releases</translation>
+        <source>https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition/releases</source>
+        <translation type="vanished">https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition/releases</translation>
     </message>
     <message>
         <source>Documentation</source>
@@ -3539,8 +3539,8 @@ Error occurred while switching component language: {e}</translation>
         <translation type="vanished">Community</translation>
     </message>
     <message>
-        <source>https://github.com/Class-Widgets/Class-Widgets</source>
-        <translation type="vanished">https://github.com/Class-Widgets/Class-Widgets</translation>
+        <source>https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition</source>
+        <translation type="vanished">https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition</translation>
     </message>
 </context>
 <context>
@@ -4056,8 +4056,8 @@ These placeholders apply only to the “Other Notifications”:
     </message>
     <message>
         <location filename="../file.py" line="50"/>
-        <source>Class Widgets 启动失败w(ﾟДﾟ)w</source>
-        <translation>Failed to launch Class Widgets w(ﾟДﾟ)w</translation>
+        <source>Class Widgets Community Edition 启动失败w(ﾟДﾟ)w</source>
+        <translation>Failed to launch Class Widgets Community Edition w(ﾟДﾟ)w</translation>
     </message>
     <message>
         <location filename="../file.py" line="51"/>
@@ -4920,14 +4920,14 @@ Do you want to hide the widget?</translation>
     </message>
     <message>
         <location filename="../main.py" line="3852"/>
-        <source>Class Widgets 正在运行</source>
-        <translation>Class Widgets is running now</translation>
+        <source>Class Widgets Community Edition 正在运行</source>
+        <translation>Class Widgets Community Edition is running now</translation>
     </message>
     <message>
         <location filename="../main.py" line="3853"/>
-        <source>Class Widgets 正在运行！请勿打开多个实例，否则将会出现不可预知的问题。
+        <source>Class Widgets Community Edition 正在运行！请勿打开多个实例，否则将会出现不可预知的问题。
 (若您需要打开多个实例，请在“设置”-&gt;“高级选项”中启用“允许程序多开”)</source>
-        <translation>Class Widgets is running now! Do not start multiple instance,or it will cause unknown problems.
+        <translation>Class Widgets Community Edition is running now! Do not start multiple instance,or it will cause unknown problems.
 (If you need to start multiple instance,Please enable&quot;Allow multiple instances&quot; In &quot;Settings&quot; -&gt; &quot;Advanced Options&quot;)</translation>
     </message>
     <message>
@@ -5020,8 +5020,8 @@ It is recommended to set the scaling factor to a value between 100% and 180%.</t
     </message>
     <message>
         <location filename="../splash.py" line="110"/>
-        <source>Class Widgets 启动中...</source>
-        <translation>Launching Class Widgets...</translation>
+        <source>Class Widgets Community Edition 启动中...</source>
+        <translation>Launching Class Widgets Community Edition...</translation>
     </message>
     <message>
         <location filename="../splash.py" line="161"/>
@@ -5037,11 +5037,11 @@ It is recommended to set the scaling factor to a value between 100% and 180%.</t
         <translation type="vanished">Unable to open folder</translation>
     </message>
     <message>
-        <source>Class Widgets 在您的系统下不支持自动打开文件夹，请手动打开以下地址：
+        <source>Class Widgets Community Edition 在您的系统下不支持自动打开文件夹，请手动打开以下地址：
 {path}</source>
-        <comment>Class Widgets 在您的系统下不支持自动打开文件夹，请手动打开以下地址：
+        <comment>Class Widgets Community Edition 在您的系统下不支持自动打开文件夹，请手动打开以下地址：
 {path}</comment>
-        <translation type="vanished">Class Widgets does not support automatic folder opening in your system, please manually open the following address:
+        <translation type="vanished">Class Widgets Community Edition does not support automatic folder opening in your system, please manually open the following address:
 {path}</translation>
     </message>
     <message>
@@ -5085,9 +5085,9 @@ It is recommended to set the scaling factor to a value between 100% and 180%.</t
         <translation type="vanished">Software License Agreement</translation>
     </message>
     <message>
-        <source>此项目 (Class Widgets) 基于 GPL-3.0 许可证授权发布，详情请参阅：</source>
-        <comment>此项目 (Class Widgets) 基于 GPL-3.0 许可证授权发布，详情请参阅：</comment>
-        <translation type="vanished">This project (Class Widgets) is licensed under the GPL-3.0 license. For details, see:</translation>
+        <source>此项目 (Class Widgets Community Edition) 基于 GPL-3.0 许可证授权发布，详情请参阅：</source>
+        <comment>此项目 (Class Widgets Community Edition) 基于 GPL-3.0 许可证授权发布，详情请参阅：</comment>
+        <translation type="vanished">This project (Class Widgets Community Edition) is licensed under the GPL-3.0 license. For details, see:</translation>
     </message>
     <message>
         <source>打开“{title}”插件文件夹</source>
@@ -5135,9 +5135,9 @@ It is recommended to set the scaling factor to a value between 100% and 180%.</t
         <translation type="vanished">Uninstall successfully</translation>
     </message>
     <message>
-        <source>插件 “{title}” 已卸载。请重启 Class Widgets 以完全移除。</source>
-        <comment>插件 “{title}” 已卸载。请重启 Class Widgets 以完全移除。</comment>
-        <translation type="vanished">Plugin &apos;{title}&apos; has been uninstalled. Please restart the Class Widgets to remove them completely.</translation>
+        <source>插件 “{title}” 已卸载。请重启 Class Widgets Community Edition 以完全移除。</source>
+        <comment>插件 “{title}” 已卸载。请重启 Class Widgets Community Edition 以完全移除。</comment>
+        <translation type="vanished">Plugin &apos;{title}&apos; has been uninstalled. Please restart the Class Widgets Community Edition to remove them completely.</translation>
     </message>
     <message>
         <source>卸载失败</source>
@@ -5156,9 +5156,9 @@ It is recommended to set the scaling factor to a value between 100% and 180%.</t
     </message>
     <message>
         <location filename="../menu.py" line="430"/>
-        <source>Class Widgets 在您的系统下不支持自动打开文件夹，请手动打开以下地址：
+        <source>Class Widgets Community Edition 在您的系统下不支持自动打开文件夹，请手动打开以下地址：
 {path}</source>
-        <translation>Class Widgets does not support automatic folder opening in your system, please manually open the following address:
+        <translation>Class Widgets Community Edition does not support automatic folder opening in your system, please manually open the following address:
 {path}</translation>
     </message>
     <message>
@@ -5245,8 +5245,8 @@ It is recommended to set the scaling factor to a value between 100% and 180%.</t
     </message>
     <message>
         <location filename="../menu.py" line="793"/>
-        <source>此项目 (Class Widgets) 基于 GPL-3.0 许可证授权发布，详情请参阅：</source>
-        <translation>This project (Class Widgets) is licensed under the GPL-3.0 license. For details, see:</translation>
+        <source>此项目 (Class Widgets Community Edition) 基于 GPL-3.0 许可证授权发布，详情请参阅：</source>
+        <translation>This project (Class Widgets Community Edition) is licensed under the GPL-3.0 license. For details, see:</translation>
     </message>
     <message>
         <location filename="../menu.py" line="875"/>
@@ -5305,8 +5305,8 @@ It is recommended to set the scaling factor to a value between 100% and 180%.</t
     </message>
     <message>
         <location filename="../menu.py" line="1023"/>
-        <source>插件 “{title}” 已卸载。请重启 Class Widgets 以完全移除。</source>
-        <translation>Plugin &apos;{title}&apos; has been uninstalled. Please restart the Class Widgets to remove it completely.</translation>
+        <source>插件 “{title}” 已卸载。请重启 Class Widgets Community Edition 以完全移除。</source>
+        <translation>Plugin &apos;{title}&apos; has been uninstalled. Please restart the Class Widgets Community Edition to remove it completely.</translation>
     </message>
     <message>
         <location filename="../menu.py" line="1035"/>
@@ -5323,10 +5323,10 @@ It is recommended to set the scaling factor to a value between 100% and 180%.</t
     <name>plugin_plaza</name>
     <message>
         <location filename="../plugin_plaza.py" line="267"/>
-        <source>此插件版本（{plugin_ver}）高于当前设备中 Class Widgets 兼容的插件版本（{SELF_PLUGIN_VERSION}）；
-请更新 Class Widgets 后再尝试安装此插件。</source>
-        <translation>This plugin version ({plugin_ver}) is higher than the plugin version ({SELF_PLUGIN_VERSION}) that Class Widgets is compatible with on the current device;
-Please update Class Widgets before trying to install this plugin.</translation>
+        <source>此插件版本（{plugin_ver}）高于当前设备中 Class Widgets Community Edition 兼容的插件版本（{SELF_PLUGIN_VERSION}）；
+请更新 Class Widgets Community Edition 后再尝试安装此插件。</source>
+        <translation>This plugin version ({plugin_ver}) is higher than the plugin version ({SELF_PLUGIN_VERSION}) that Class Widgets Community Edition is compatible with on the current device;
+Please update Class Widgets Community Edition before trying to install this plugin.</translation>
     </message>
     <message>
         <location filename="../plugin_plaza.py" line="283"/>

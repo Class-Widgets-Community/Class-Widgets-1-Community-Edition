@@ -2,15 +2,15 @@
 <a href="/.github/CONTRIBUTING.md">简体中文</a> | English | <a href="/docs/contributing/CONTRIBUTING.ja.md">日本語</a>
 </div>
 
-# Contributing to `Class Widgets`
+# Contributing to `Class Widgets Community Edition`
 
 ## Feedback
 
 ### Reporting Bugs
 
-If you encounter issues while using Class Widgets, submit bug reports via Issues. Before submitting:
+If you encounter issues while using Class Widgets Community Edition, submit bug reports via Issues. Before submitting:
 
-- Confirm the issue is **not fixed** in the [latest Release version](https://github.com/Class-Widgets/Class-Widgets/releases/latest) or [latest main branch commits](https://github.com/Class-Widgets/Class-Widgets/commits);
+- Confirm the issue is **not fixed** in the [latest Release version](https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition/releases/latest) or [latest main branch commits](https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition/commits);
 - Verify no identical or similar Issues exist (search using relevant keywords).
 
 Bug reports **must include**:
@@ -96,13 +96,13 @@ Please follow the [Conventional Commits](https://www.conventionalcommits.org/en/
 - PRs will be merged after approval and successful testing;
 - If no feedback is received after 7 business days, politely remind the team via community channels.
 
-## Contributing Translations
+<!--## Contributing Translations
 
-Class Widgets supports multilingual internationalization (i18n). Contribute translations via:
+Class Widgets Community Edition supports multilingual internationalization (i18n). Contribute translations via:
 
-1. Visit the project's [Weblate translation platform](https://hosted.weblate.org/engage/class-widgets-1/);
+1. Visit the project's [Weblate translation platform](https://hosted.weblate.org/engage/class-widgets-1-community-edition/);
 2. Select your target language and translate uncompleted entries;
-3. Ensure translations match software context and maintain terminology consistency (refer to the "Feature Terminology Table" appendix).
+3. Ensure translations match software context and maintain terminology consistency (refer to the "Feature Terminology Table" appendix).-->
 
 ## Still Have Questions?
 

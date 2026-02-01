@@ -115,7 +115,7 @@
          <item>
           <widget class="SubtitleLabel" name="SubtitleLabel">
            <property name="text">
-            <string>Class Widgets</string>
+            <string>Class Widgets Community Edition</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
@@ -125,7 +125,7 @@
          <item>
           <widget class="CaptionLabel" name="CaptionLabel_3">
            <property name="text">
-            <string>Class Widgets 是一款能显示当前课程的桌面组件App。其提供了直观的图形化课程表编辑和美观的桌面组件。</string>
+            <string>Class Widgets Community Edition 是一款能显示当前课程的桌面组件App。其提供了直观的图形化课程表编辑和美观的桌面组件。</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
@@ -657,14 +657,14 @@
                  </sizepolicy>
                 </property>
                 <property name="text">
-                 <string>启动 Class Widgets 时自动检查更新</string>
+                 <string>启动 Class Widgets Community Edition 时自动检查更新</string>
                 </property>
                <property name="wordWrap"><bool>true</bool></property></widget>
               </item>
               <item>
                <widget class="CaptionLabel" name="CaptionLabel_12">
                 <property name="text">
-                 <string>若启用，Class Widgets 将在启动时联网检查选定的更新通道中是否有最新版本更新。</string>
+                 <string>若启用，Class Widgets Community Edition 将在启动时联网检查选定的更新通道中是否有最新版本更新。</string>
                 </property>
                 <property name="wordWrap">
                  <bool>true</bool>

@@ -2,15 +2,15 @@
 简体中文 | <a href="/docs/contributing/CONTRIBUTING.en_US.md">English</a> | <a href="/docs/contributing/CONTRIBUTING.ja.md">日本語</a>
 </div>
 
-# 向 `Class Widgets` 贡献
+# 向 `Class Widgets Community Edition` 贡献
 
 ## 反馈
 
 ### 反馈 Bug
 
-如果您在使用 Class Widgets 时遇到问题，可在 Issues 中提交 Bug 反馈。提交前请先完成以下检查：
+如果您在使用 Class Widgets Community Edition 时遇到问题，可在 Issues 中提交 Bug 反馈。提交前请先完成以下检查：
 
-- 确认问题在 [最新 Release 版本](https://github.com/Class-Widgets/Class-Widgets/releases/latest) 和 [主分支最新提交](https://github.com/Class-Widgets/Class-Widgets/commits) 中未被修复；
+- 确认问题在 [最新 Release 版本](https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition/releases/latest) 和 [主分支最新提交](https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition/commits) 中未被修复；
 - 确认没有相同或相似的 Issue 已存在（可通过关键词搜索验证）。
 
 Bug 反馈需包含的信息：
@@ -102,13 +102,13 @@ Bug 反馈需包含的信息：
 - 审核通过且测试无误后，PR 将被合并至主分支；
 - 若超过 7 个工作日未收到反馈，可在社群中友好提醒。
 
-## 贡献翻译
+<!--## 贡献翻译
 
-Class Widgets 支持多语言国际化（i18n），您可通过以下方式贡献翻译：
+Class Widgets Community Edition 支持多语言国际化（i18n），您可通过以下方式贡献翻译：
 
-1. 访问项目 [Weblate 翻译平台](https://hosted.weblate.org/engage/class-widgets-1/)；
+1. 访问项目 [Weblate 翻译平台](https://hosted.weblate.org/engage/class-widgets-1-community-edition/)；
 2. 选择目标语言，翻译未完成的词条；
-3. 翻译需符合软件语境，保持术语一致性（参考附录「功能对照表」）。
+3. 翻译需符合软件语境，保持术语一致性（参考附录「功能对照表」）。-->
 
 ## 还有问题？
 

@@ -792,10 +792,10 @@ class ErrorDialog(Dialog):  # 重大错误提示框
         splash_window.error()
 
         super().__init__(
-            QCoreApplication.translate('ErrorDialog', 'Class Widgets 崩溃报告'),
+            QCoreApplication.translate('ErrorDialog', 'Class Widgets Community Edition 崩溃报告'),
             QCoreApplication.translate(
                 'ErrorDialog',
-                '抱歉！Class Widgets 发生了严重的错误从而无法正常运行。您可以保存下方的错误信息并向他人求助。'
+                '抱歉！Class Widgets Community Edition 发生了严重的错误从而无法正常运行。您可以保存下方的错误信息并向他人求助。'
                 '若您认为这是程序的Bug，请点击“报告此问题”或联系开发者。',
             ),
             parent,
@@ -842,7 +842,7 @@ class ErrorDialog(Dialog):  # 重大错误提示框
         self.report_problem.clicked.connect(
             lambda: QDesktopServices.openUrl(
                 QUrl(
-                    'https://github.com/Class-Widgets/Class-Widgets/issues/'
+                    'https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition/issues/'
                     'new?assignees=&labels=Bug&projects=&template=BugReport.yml&title=[Bug]:'
                 )
             )
@@ -2411,8 +2411,8 @@ class DesktopWidget(QWidget):  # 主要小组件
             return
 
         utils.tray_icon = utils.TrayIcon(self)
-        utils.tray_icon.setToolTip(f"Class Widgets - {config_center.schedule_name[:-5]}")
-        self.tray_menu = SystemTrayMenu(title='Class Widgets', parent=self)
+        utils.tray_icon.setToolTip(f"Class Widgets Community Edition - {config_center.schedule_name[:-5]}")
+        self.tray_menu = SystemTrayMenu(title='Class Widgets Community Edition', parent=self)
         self.tray_menu.addActions(
             [
                 Action(
@@ -3801,7 +3801,7 @@ def init() -> None:
         version = "DEBUG"
     build_uuid = config_center.read_conf("Version", "build_runid") or "(Debug)"
     build_type = config_center.read_conf("Version", "build_type")
-    logger.debug('Class Widgets 版本信息:')
+    logger.debug('Class Widgets Community Edition 版本信息:')
     if "__BUILD_RUNID__" in build_uuid or "__BUILD_TYPE__" in build_type:
         logger.debug(f'├── 版本号: {version}')
         logger.debug('├── 构建ID: Debug')
@@ -3810,7 +3810,7 @@ def init() -> None:
         logger.debug(f'├── 版本号: {version}')
         logger.debug(f'├── 构建ID: {build_uuid}')
         logger.debug(f'└── 构建类型: {build_type}')
-    logger.success('Class Widgets 初始化完成!')
+    logger.success('Class Widgets Community Edition 初始化完成!')
     p_loader.run_plugins()  # 运行插件
 
     first_start = False
@@ -3832,7 +3832,7 @@ def setup_signal_handlers_optimized() -> None:
 
 
 if __name__ == '__main__':
-    utils.guard = utils.SingleInstanceGuard("ClassWidgets")
+    utils.guard = utils.SingleInstanceGuard("ClassWidgetsCE")
 
     old_config_file = CW_HOME / "config.ini"
     if old_config_file.exists():
@@ -3849,10 +3849,10 @@ if __name__ == '__main__':
 
             app = QApplication.instance() or QApplication(sys.argv)
             dlg = Dialog(
-                QCoreApplication.translate('main', 'Class Widgets 正在运行'),
+                QCoreApplication.translate('main', 'Class Widgets Community Edition 正在运行'),
                 QCoreApplication.translate(
                     'main',
-                    'Class Widgets 正在运行！请勿打开多个实例，否则将会出现不可预知的问题。'
+                    'Class Widgets Community Edition 正在运行！请勿打开多个实例，否则将会出现不可预知的问题。'
                     '\n(若您需要打开多个实例，请在“设置”->“高级选项”中启用“允许程序多开”)',
                 ),
             )
@@ -3968,9 +3968,9 @@ if __name__ == '__main__':
 
     if config_center.read_conf('Other', 'initialstartup') == '1':  # 首次启动
         try:
-            utils.add_shortcut('ClassWidgets.exe', str(CW_HOME / 'img/favicon.ico'))
+            utils.add_shortcut('ClassWidgetsCE.exe', str(CW_HOME / 'img/favicon.ico'))
             utils.add_shortcut_to_startmenu(
-                str(CW_HOME / 'ClassWidgets.exe'), str(CW_HOME / 'img/favicon.ico')
+                str(CW_HOME / 'ClassWidgetsCE.exe'), str(CW_HOME / 'img/favicon.ico')
             )
             config_center.write_conf('Other', 'initialstartup', '')
         except Exception as e:

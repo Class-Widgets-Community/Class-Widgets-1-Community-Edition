@@ -161,13 +161,13 @@
     <name>ErrorDialog</name>
     <message>
         <location filename="../main.py" line="795"/>
-        <source>Class Widgets 崩溃报告</source>
-        <translation>Class Widgets 崩溃报告</translation>
+        <source>Class Widgets Community Edition 崩溃报告</source>
+        <translation>Class Widgets Community Edition 崩溃报告</translation>
     </message>
     <message>
         <location filename="../main.py" line="796"/>
-        <source>抱歉！Class Widgets 发生了严重的错误从而无法正常运行。您可以保存下方的错误信息并向他人求助。若您认为这是程序的Bug，请点击“报告此问题”或联系开发者。</source>
-        <translation>抱歉！Class Widgets 发生了严重的错误从而无法正常运行。您可以保存下方的错误信息并向他人求助。若您认为这是程序的 Bug，请点击“报告此问题”或联系开发者。</translation>
+        <source>抱歉！Class Widgets Community Edition 发生了严重的错误从而无法正常运行。您可以保存下方的错误信息并向他人求助。若您认为这是程序的Bug，请点击“报告此问题”或联系开发者。</source>
+        <translation>抱歉！Class Widgets Community Edition 发生了严重的错误从而无法正常运行。您可以保存下方的错误信息并向他人求助。若您认为这是程序的 Bug，请点击“报告此问题”或联系开发者。</translation>
     </message>
     <message>
         <location filename="../main.py" line="815"/>
@@ -335,13 +335,13 @@
     </message>
     <message>
         <location filename="../view/menu/about.ui" line="118"/>
-        <source>Class Widgets</source>
-        <translation>Class Widgets</translation>
+        <source>Class Widgets Community Edition</source>
+        <translation>Class Widgets Community Edition</translation>
     </message>
     <message>
         <location filename="../view/menu/about.ui" line="128"/>
-        <source>Class Widgets 是一款能显示当前课程的桌面组件App。其提供了直观的图形化课程表编辑和美观的桌面组件。</source>
-        <translation>Class Widgets 是一款能显示当前课程的桌面组件 App。其提供了直观的图形化课程表编辑和美观的桌面组件。</translation>
+        <source>Class Widgets Community Edition 是一款能显示当前课程的桌面组件App。其提供了直观的图形化课程表编辑和美观的桌面组件。</source>
+        <translation>Class Widgets Community Edition 是一款能显示当前课程的桌面组件 App。其提供了直观的图形化课程表编辑和美观的桌面组件。</translation>
     </message>
     <message>
         <location filename="../view/menu/about.ui" line="232"/>
@@ -417,13 +417,13 @@
     </message>
     <message>
         <location filename="../view/menu/about.ui" line="660"/>
-        <source>启动 Class Widgets 时自动检查更新</source>
-        <translation>启动 Class Widgets 时自动检查更新</translation>
+        <source>启动 Class Widgets Community Edition 时自动检查更新</source>
+        <translation>启动 Class Widgets Community Edition 时自动检查更新</translation>
     </message>
     <message>
         <location filename="../view/menu/about.ui" line="667"/>
-        <source>若启用，Class Widgets 将在启动时联网检查选定的更新通道中是否有最新版本更新。</source>
-        <translation>若启用，Class Widgets 将在启动时联网检查选定的更新通道中是否有最新版本更新。</translation>
+        <source>若启用，Class Widgets Community Edition 将在启动时联网检查选定的更新通道中是否有最新版本更新。</source>
+        <translation>若启用，Class Widgets Community Edition 将在启动时联网检查选定的更新通道中是否有最新版本更新。</translation>
     </message>
     <message>
         <location filename="../view/menu/advance.ui" line="152"/>
@@ -728,8 +728,8 @@
     </message>
     <message>
         <location filename="../view/menu/advance.ui" line="1819"/>
-        <source>若启用，Class Widgets 将在程序崩溃时自动忽略，并不再弹出窗口；以免影响教学任务。</source>
-        <translation>若启用，Class Widgets 将在程序崩溃时自动忽略，并不再弹出窗口；以免影响教学任务。</translation>
+        <source>若启用，Class Widgets Community Edition 将在程序崩溃时自动忽略，并不再弹出窗口；以免影响教学任务。</source>
+        <translation>若启用，Class Widgets Community Edition 将在程序崩溃时自动忽略，并不再弹出窗口；以免影响教学任务。</translation>
     </message>
     <message>
         <location filename="../view/menu/advance.ui" line="1890"/>
@@ -1838,8 +1838,8 @@
     </message>
     <message>
         <location filename="../plugin_plaza.py" line="372"/>
-        <source>为 Class Widgets 安装</source>
-        <translation>为 Class Widgets 安装</translation>
+        <source>为 Class Widgets Community Edition 安装</source>
+        <translation>为 Class Widgets Community Edition 安装</translation>
     </message>
     <message>
         <location filename="../plugin_plaza.py" line="375"/>
@@ -2086,8 +2086,8 @@
     </message>
     <message>
         <location filename="../menu.py" line="3303"/>
-        <source>https://github.com/RinLit-233-shiroko/Class-Widgets</source>
-        <translation>https://github.com/RinLit-233-shiroko/Class-Widgets</translation>
+        <source>https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition</source>
+        <translation>https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition</translation>
     </message>
     <message>
         <location filename="../menu.py" line="3309"/>
@@ -2096,8 +2096,8 @@
     </message>
     <message>
         <location filename="../menu.py" line="3326"/>
-        <source>https://github.com/RinLit-233-shiroko/Class-Widgets?tab=readme-ov-file#致谢</source>
-        <translation>https://github.com/RinLit-233-shiroko/Class-Widgets?tab=readme-ov-file#致谢</translation>
+        <source>https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition?tab=readme-ov-file#致谢</source>
+        <translation>https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition?tab=readme-ov-file#致谢</translation>
     </message>
     <message>
         <location filename="../menu.py" line="3354"/>
@@ -3057,8 +3057,8 @@
         <translation type="vanished">没办法继续添加了 o(TヘTo)</translation>
     </message>
     <message>
-        <source>Class Widgets 最多只能添加10个“节点”！</source>
-        <translation type="vanished">Class Widgets 最多只能添加 10 个“节点”！</translation>
+        <source>Class Widgets Community Edition 最多只能添加10个“节点”！</source>
+        <translation type="vanished">Class Widgets Community Edition 最多只能添加 10 个“节点”！</translation>
     </message>
     <message>
         <location filename="../menu.py" line="5877"/>
@@ -3137,8 +3137,8 @@
     </message>
     <message>
         <location filename="../menu.py" line="6237"/>
-        <source>Class Widgets - 设置</source>
-        <translation>Class Widgets - 设置</translation>
+        <source>Class Widgets Community Edition - 设置</source>
+        <translation>Class Widgets Community Edition - 设置</translation>
     </message>
     <message>
         <location filename="../menu.py" line="6319"/>
@@ -3190,8 +3190,8 @@
         <translation type="vanished">Welcome</translation>
     </message>
     <message>
-        <source>Class Widgets</source>
-        <translation type="vanished">Class Widgets</translation>
+        <source>Class Widgets Community Edition</source>
+        <translation type="vanished">Class Widgets Community Edition</translation>
     </message>
     <message>
         <source>v1.2.0.0 LTS</source>
@@ -3210,8 +3210,8 @@
         <translation type="vanished">Release notes</translation>
     </message>
     <message>
-        <source>https://github.com/Class-Widgets/Class-Widgets/releases</source>
-        <translation type="vanished">https://github.com/Class-Widgets/Class-Widgets/releases</translation>
+        <source>https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition/releases</source>
+        <translation type="vanished">https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition/releases</translation>
     </message>
     <message>
         <source>Documentation</source>
@@ -3226,8 +3226,8 @@
         <translation type="vanished">Community</translation>
     </message>
     <message>
-        <source>https://github.com/Class-Widgets/Class-Widgets</source>
-        <translation type="vanished">https://github.com/Class-Widgets/Class-Widgets</translation>
+        <source>https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition</source>
+        <translation type="vanished">https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition</translation>
     </message>
 </context>
 <context>
@@ -3715,8 +3715,8 @@
     <name>file</name>
     <message>
         <location filename="../file.py" line="50"/>
-        <source>Class Widgets 启动失败w(ﾟДﾟ)w</source>
-        <translation>Class Widgets 启动失败 w(ﾟДﾟ)w</translation>
+        <source>Class Widgets Community Edition 启动失败w(ﾟДﾟ)w</source>
+        <translation>Class Widgets Community Edition 启动失败 w(ﾟДﾟ)w</translation>
     </message>
     <message>
         <location filename="../file.py" line="51"/>
@@ -4289,14 +4289,14 @@
     </message>
     <message>
         <location filename="../main.py" line="3852"/>
-        <source>Class Widgets 正在运行</source>
-        <translation>Class Widgets 正在运行</translation>
+        <source>Class Widgets Community Edition 正在运行</source>
+        <translation>Class Widgets Community Edition 正在运行</translation>
     </message>
     <message>
         <location filename="../main.py" line="3853"/>
-        <source>Class Widgets 正在运行！请勿打开多个实例，否则将会出现不可预知的问题。
+        <source>Class Widgets Community Edition 正在运行！请勿打开多个实例，否则将会出现不可预知的问题。
 (若您需要打开多个实例，请在“设置”-&gt;“高级选项”中启用“允许程序多开”)</source>
-        <translation>Class Widgets 正在运行！请勿打开多个实例，否则将会出现不可预知的问题。
+        <translation>Class Widgets Community Edition 正在运行！请勿打开多个实例，否则将会出现不可预知的问题。
 (若您需要打开多个实例，请在“设置”-&gt;“高级选项”中启用“允许程序多开”)</translation>
     </message>
     <message>
@@ -4389,8 +4389,8 @@
     </message>
     <message>
         <location filename="../splash.py" line="110"/>
-        <source>Class Widgets 启动中...</source>
-        <translation>Class Widgets 启动中...</translation>
+        <source>Class Widgets Community Edition 启动中...</source>
+        <translation>Class Widgets Community Edition 启动中...</translation>
     </message>
     <message>
         <location filename="../splash.py" line="161"/>
@@ -4407,9 +4407,9 @@
     </message>
     <message>
         <location filename="../menu.py" line="430"/>
-        <source>Class Widgets 在您的系统下不支持自动打开文件夹，请手动打开以下地址：
+        <source>Class Widgets Community Edition 在您的系统下不支持自动打开文件夹，请手动打开以下地址：
 {path}</source>
-        <translation>Class Widgets 在您的系统下不支持自动打开文件夹，请手动打开以下地址：
+        <translation>Class Widgets Community Edition 在您的系统下不支持自动打开文件夹，请手动打开以下地址：
 {path}</translation>
     </message>
     <message>
@@ -4496,8 +4496,8 @@
     </message>
     <message>
         <location filename="../menu.py" line="793"/>
-        <source>此项目 (Class Widgets) 基于 GPL-3.0 许可证授权发布，详情请参阅：</source>
-        <translation>此项目 (Class Widgets) 基于 GPL-3.0 许可证授权发布，详情请参阅：</translation>
+        <source>此项目 (Class Widgets Community Edition) 基于 GPL-3.0 许可证授权发布，详情请参阅：</source>
+        <translation>此项目 (Class Widgets Community Edition) 基于 GPL-3.0 许可证授权发布，详情请参阅：</translation>
     </message>
     <message>
         <location filename="../menu.py" line="875"/>
@@ -4556,8 +4556,8 @@
     </message>
     <message>
         <location filename="../menu.py" line="1023"/>
-        <source>插件 “{title}” 已卸载。请重启 Class Widgets 以完全移除。</source>
-        <translation>插件 “{title}” 已卸载。请重启 Class Widgets 以完全移除。</translation>
+        <source>插件 “{title}” 已卸载。请重启 Class Widgets Community Edition 以完全移除。</source>
+        <translation>插件 “{title}” 已卸载。请重启 Class Widgets Community Edition 以完全移除。</translation>
     </message>
     <message>
         <location filename="../menu.py" line="1035"/>
@@ -4574,10 +4574,10 @@
     <name>plugin_plaza</name>
     <message>
         <location filename="../plugin_plaza.py" line="267"/>
-        <source>此插件版本（{plugin_ver}）高于当前设备中 Class Widgets 兼容的插件版本（{SELF_PLUGIN_VERSION}）；
-请更新 Class Widgets 后再尝试安装此插件。</source>
-        <translation>此插件版本（{plugin_ver}）高于当前设备中 Class Widgets 兼容的插件版本（{SELF_PLUGIN_VERSION}）；
-请更新 Class Widgets 后再尝试安装此插件。</translation>
+        <source>此插件版本（{plugin_ver}）高于当前设备中 Class Widgets Community Edition 兼容的插件版本（{SELF_PLUGIN_VERSION}）；
+请更新 Class Widgets Community Edition 后再尝试安装此插件。</source>
+        <translation>此插件版本（{plugin_ver}）高于当前设备中 Class Widgets Community Edition 兼容的插件版本（{SELF_PLUGIN_VERSION}）；
+请更新 Class Widgets Community Edition 后再尝试安装此插件。</translation>
     </message>
     <message>
         <location filename="../plugin_plaza.py" line="283"/>

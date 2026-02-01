@@ -202,7 +202,7 @@
                </font>
               </property>
               <property name="text">
-               <string notr="true">Class Widgets</string>
+               <string notr="true">Class Widgets Community Edition</string>
               </property>
               <property name="wordWrap">
                <bool>false</bool>
