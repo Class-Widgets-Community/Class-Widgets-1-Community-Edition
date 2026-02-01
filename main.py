@@ -245,14 +245,14 @@ def get_hide_status() -> int:
     # 满分啦（
     # 祝所有用 Class Widgets 的、不用 Class Widgets 的学子体测满分啊（（
     global excluded_lessons
-    isbreak, _duration, _total_time, lesson_name = schedule_manager.get_status()
+    status, _duration, _total_time, lesson_name = schedule_manager.get_status()
     return (
         1
         if {
             '0': lambda: 0,
-            '1': lambda: not isbreak,
+            '1': lambda: status == 1,
             '2': lambda: check_windows_maximize() or check_fullscreen(),
-            '3': lambda: not isbreak,
+            '3': lambda: status == 1,
         }[str(config_center.read_conf('General', 'hide'))]()
         and lesson_name not in excluded_lessons
         else 0
@@ -1294,7 +1294,7 @@ class FloatingWidget(QWidget):  # 浮窗
             )  # 设置窗口透明度
         else:
             self.setWindowOpacity(1.0)
-        _isbreak, _duration, _total_time, current_lesson_name = schedule_manager.get_status()
+        _status, _duration, _total_time, current_lesson_name = schedule_manager.get_status()
         self.text_changed = False
         if self.current_lesson_name_text.text() != current_lesson_name:
             self.text_changed = True
@@ -1488,14 +1488,14 @@ class FloatingWidget(QWidget):  # 浮窗
             and self.r_Position == self.p_Position
             and not self.animating
         ):  # 非特定隐藏模式下执行点击事件
-            isbreak, _, _, _ = schedule_manager.get_status()
+            status, _, _, _ = schedule_manager.get_status()
             if hide_mode == '3':
                 if mgr.state:
                     mgr.decide_to_hide()
-                    mgr.hide_status = (0 if isbreak else 1, 1)
+                    mgr.hide_status = (0 if status != 1 else 1, 1)
                 else:
                     mgr.show_windows()
-                    mgr.hide_status = (0 if isbreak else 1, 0)
+                    mgr.hide_status = (0 if status != 1 else 1, 0)
             elif hide_mode == '0':
                 mgr.show_windows()
                 self.close()
@@ -2055,14 +2055,14 @@ class DesktopWidget(QWidget):  # 主要小组件
                 else:
                     mgr.show_windows()
         elif config_center.read_conf('General', 'hide') == '3':
-            isbreak, _, _, _ = schedule_manager.get_status()
+            status, _, _, _ = schedule_manager.get_status()
             if reason == QSystemTrayIcon.ActivationReason.Trigger:
                 if mgr.state:
                     mgr.decide_to_hide()
-                    mgr.hide_status = (0 if isbreak else 1, 1)
+                    mgr.hide_status = (0 if status != 1 else 1, 1)
                 else:
                     mgr.show_windows()
-                    mgr.hide_status = (0 if isbreak else 1, 0)
+                    mgr.hide_status = (0 if status != 1 else 1, 0)
 
     def rightReleaseEvent(self, event: QMouseEvent) -> None:  # 右键事件
         event.ignore()
@@ -2162,7 +2162,7 @@ class DesktopWidget(QWidget):  # 主要小组件
 
     def update_data(self, path: str = '') -> None:
         global current_time, current_week, start_y, today
-        isbreak, _duration, _total_time, _lesson_name = schedule_manager.get_status()
+        status, _duration, _total_time, _lesson_name = schedule_manager.get_status()
 
         today = TimeManagerFactory.get_instance().get_today()
         current_time = TimeManagerFactory.get_instance().get_current_time_str('%H:%M:%S')
@@ -2175,7 +2175,7 @@ class DesktopWidget(QWidget):  # 主要小组件
                 else:
                     mgr.show_windows()
         elif hide_mode == '3':  # 灵活隐藏
-            if mgr.hide_status is None or mgr.hide_status[0] != int(not isbreak):
+            if mgr.hide_status is None or mgr.hide_status[0] != int(status == 1):
                 mgr.hide_status = (-1, hide_status)
             if mgr.state == mgr.hide_status[1]:
                 if mgr.hide_status[1]:
@@ -3259,13 +3259,13 @@ class DesktopWidget(QWidget):  # 主要小组件
             else:
                 mgr.show_windows()
         elif config_center.read_conf('General', 'hide') == '3':  # 隐藏
-            isbreak, _, _, _ = schedule_manager.get_status()
+            status, _, _, _ = schedule_manager.get_status()
             if mgr.state:
                 mgr.decide_to_hide()
-                mgr.hide_status = (0 if isbreak else 1, 1)
+                mgr.hide_status = (0 if status != 1 else 1, 1)
             else:
                 mgr.show_windows()
-                mgr.hide_status = (0 if isbreak else 1, 0)
+                mgr.hide_status = (0 if status != 1 else 1, 0)
         else:
             a0.ignore()
         if utils.focus_manager:
