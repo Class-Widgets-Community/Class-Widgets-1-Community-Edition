@@ -1,6 +1,6 @@
 {
   "appid": "cn.rinlit.classwidgets",
-  "name": "Class Widgets",
+  "name": "Class Widgets Community Edition",
   "version": "",
   "arch": ["amd64"],
   "permissions": {

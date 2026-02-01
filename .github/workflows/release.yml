@@ -25,7 +25,7 @@ jobs:
     steps:
       - name: Check Repository
         run: |
-          if [ "${{ github.repository }}" != "Class-Widgets/Class-Widgets" ]; then
+          if [ "${{ github.repository }}" != "Class-Widgets-Community/Class-Widgets-1-Community-Edition" ]; then
             echo "[DEBUG] 工作流不在主仓库"
             exit 1
           fi
@@ -42,7 +42,7 @@ jobs:
       - name: Download artifacts
         uses: actions/download-artifact@v7
         with:
-          name: ClassWidgets-Packages
+          name: ClassWidgetsCE-Packages
           path: artifacts
           run-id: ${{ inputs.run_id }}
 

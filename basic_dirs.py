@@ -4,9 +4,9 @@ from sys import platform
 
 from loguru import logger
 
-APP_NAME = "Class Widgets"
+APP_NAME = "Class Widgets Community Edition"
 CW_HOME = Path(__file__).parent
-IS_PORTABLE = os.environ.get("CLASSWIDGETS_NOT_PORTABLE", "") == ""
+IS_PORTABLE = os.environ.get("CLASSWIDGETSCE_NOT_PORTABLE", "") == ""
 
 
 def _ensure_dir(path: Path) -> Path:
@@ -28,7 +28,7 @@ def _get_app_dir(
         return _ensure_dir(CW_HOME / default_subdir)
 
     # 处理自定义路径
-    if custom := os.environ.get(f"CLASSWIDGETS_CUSTOM_{purpose.upper()}_HOME"):
+    if custom := os.environ.get(f"CLASSWIDGETSCE_CUSTOM_{purpose.upper()}_HOME"):
         return _ensure_dir(Path(custom))
 
     # Windows 逻辑

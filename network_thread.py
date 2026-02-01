@@ -26,8 +26,8 @@ proxies = {"http": "http://127.0.0.1:10809", "https": "http://127.0.0.1:10809"} 
 proxies = {"http": None, "https": None}
 
 MIRROR_PATH = CW_HOME / "data" / "mirror.json"
-PLAZA_REPO_URL = "https://raw.githubusercontent.com/Class-Widgets/plugin-plaza/"
-PLAZA_REPO_DIR = "https://api.github.com/repos/Class-Widgets/plugin-plaza/contents/"
+PLAZA_REPO_URL = "https://raw.githubusercontent.com/Class-Widgets-Community/plugin-plaza/"
+PLAZA_REPO_DIR = "https://api.github.com/repos/Class-Widgets-Community/plugin-plaza/contents/"
 threads = []
 
 # 读取镜像配置
@@ -53,7 +53,7 @@ class getRepoFileList(QThread):  # 获取仓库文件目录
 
     def __init__(
         self,
-        url: str = 'https://raw.githubusercontent.com/Class-Widgets/plugin-plaza/main/Banner/banner.json',
+        url: str = 'https://raw.githubusercontent.com/Class-Widgets-Community/plugin-plaza/main/Banner/banner.json',
     ) -> None:
         super().__init__()
         self.download_url = url
@@ -84,7 +84,7 @@ class getPluginInfo(QThread):  # 获取插件信息(json)
 
     def __init__(
         self,
-        url: str = 'https://raw.githubusercontent.com/Class-Widgets/plugin-plaza/main/Plugins/plugin_list.json',
+        url: str = 'https://raw.githubusercontent.com/Class-Widgets-Community/plugin-plaza/main/Plugins/plugin_list.json',
     ) -> None:
         super().__init__()
         self.download_url = url
@@ -115,7 +115,7 @@ class getTags(QThread):  # 获取插件标签(json)
 
     def __init__(
         self,
-        url: str = 'https://raw.githubusercontent.com/Class-Widgets/plugin-plaza/main/Plugins/plaza_detail.json',
+        url: str = 'https://raw.githubusercontent.com/Class-Widgets-Community/plugin-plaza/main/Plugins/plaza_detail.json',
     ) -> None:
         super().__init__()
         self.download_url = url
@@ -146,7 +146,7 @@ class getImg(QThread):  # 获取图片
 
     def __init__(
         self,
-        url: str = 'https://raw.githubusercontent.com/Class-Widgets/plugin-plaza/main/Banner/banner_1.png',
+        url: str = 'https://raw.githubusercontent.com/Class-Widgets-Community/plugin-plaza/main/Banner/banner_1.png',
     ) -> None:
         super().__init__()
         self.download_url = url
@@ -183,7 +183,7 @@ class getReadme(QThread):  # 获取README
 
     def __init__(
         self,
-        url: str = 'https://raw.githubusercontent.com/Class-Widgets/Class-Widgets/main/README.md',
+        url: str = 'https://raw.githubusercontent.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition/main/README.md',
     ) -> None:
         super().__init__()
         self.download_url = url
@@ -400,7 +400,7 @@ class VersionThread(QThread):  # 获取最新版本号
 
     @staticmethod
     def get_latest_version() -> Dict[str, Any]:
-        url = "https://classwidgets.rinlit.cn/version.json"
+        url = "https://cwce.hpdnya.com/version.json"
         try:
             logger.info("正在获取版本信息")
             response = requests.get(url, proxies=proxies, timeout=30)

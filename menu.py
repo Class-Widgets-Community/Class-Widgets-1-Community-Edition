@@ -429,7 +429,7 @@ def open_dir(path: str):
             QCoreApplication.translate('menu', '无法打开文件夹'),
             QCoreApplication.translate(
                 'menu',
-                'Class Widgets 在您的系统下不支持自动打开文件夹，请手动打开以下地址：\n{path}',
+                'Class Widgets Community Edition 在您的系统下不支持自动打开文件夹，请手动打开以下地址：\n{path}',
             ).format(path=path),
         )
         msg_box.yesButton.setText(QCoreApplication.translate('menu', '好'))
@@ -791,7 +791,7 @@ class licenseDialog(MessageBoxBase):  # 显示软件许可协议
         title_label.setText(QCoreApplication.translate('menu', '软件许可协议'))
         subtitle_label.setText(
             QCoreApplication.translate(
-                'menu', '此项目 (Class Widgets) 基于 GPL-3.0 许可证授权发布，详情请参阅：'
+                'menu', '此项目 (Class Widgets Community Edition) 基于 GPL-3.0 许可证授权发布，详情请参阅：'
             )
         )
         self.yesButton.setText(QCoreApplication.translate('menu', '好'))  # 按钮组件汉化
@@ -1021,7 +1021,7 @@ class PluginCard(CardWidget):  # 插件卡片
                 InfoBar.success(
                     title=QCoreApplication.translate('menu', '卸载成功'),
                     content=QCoreApplication.translate(
-                        'menu', '插件 “{title}” 已卸载。请重启 Class Widgets 以完全移除。'
+                        'menu', '插件 “{title}” 已卸载。请重启 Class Widgets Community Edition 以完全移除。'
                     ).format(title=self.title),
                     orient=Qt.Horizontal,
                     isClosable=True,
@@ -2256,7 +2256,7 @@ class SettingsMenu(FluentWindow):
         open_by_browser.setIcon(fIcon.LINK)
         open_by_browser.clicked.connect(
             lambda: QDesktopServices.openUrl(
-                QUrl(self.tr('https://classwidgets.rinlit.cn/docs-user/'))
+                QUrl(self.tr('https://docs.cwce.hpdnya.com/about/'))
             )
         )
 
@@ -3300,7 +3300,7 @@ class SettingsMenu(FluentWindow):
         github_page = self.findChild(PushButton, "button_github")
         github_page.clicked.connect(
             lambda: QDesktopServices.openUrl(
-                QUrl(self.tr('https://github.com/RinLit-233-shiroko/Class-Widgets'))
+                QUrl(self.tr('https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition'))
             )
         )
 
@@ -3312,7 +3312,7 @@ class SettingsMenu(FluentWindow):
         weblate_page = self.findChild(PushButton, 'button_weblate')
         weblate_page.clicked.connect(
             lambda: QDesktopServices.openUrl(
-                QUrl('https://hosted.weblate.org/engage/class-widgets-1')
+                QUrl('https://hosted.weblate.org/engage/class-widgets-1-community-edition')
             )
         )
 
@@ -3324,7 +3324,7 @@ class SettingsMenu(FluentWindow):
             lambda: QDesktopServices.openUrl(
                 QUrl(
                     self.tr(
-                        'https://github.com/RinLit-233-shiroko/Class-Widgets?tab=readme-ov-file#致谢'
+                        'https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition?tab=readme-ov-file#致谢'
                     )
                 )
             )
@@ -4981,7 +4981,7 @@ class SettingsMenu(FluentWindow):
                 self.show_tip_flyout(
                     self.tr('导入失败！'),
                     '课程表文件导入失败！\n'
-                    '可能为格式错误或文件损坏，请检查此文件是否为 Class Widgets 课程表文件。\n'
+                    '可能为格式错误或文件损坏，请检查此文件是否为 Class Widgets Community Edition 课程表文件。\n'
                     '详情请查看Log日志，日志位于./log/下。\n'
                     '注意: 尚不支持 json 格式的 CSES 课表导入',
                     self.import_from_file,
@@ -6234,7 +6234,7 @@ class SettingsMenu(FluentWindow):
         self.move(int(screen_width / 2 - width / 2), 150)
         self.resize(width, height)
 
-        self.setWindowTitle(self.tr('Class Widgets - 设置'))
+        self.setWindowTitle(self.tr('Class Widgets Community Edition - 设置'))
         self.setWindowIcon(QIcon(str(CW_HOME / 'img' / 'logo' / 'favicon-settings.ico')))
 
         self.init_font()  # 设置字体

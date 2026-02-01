@@ -47,7 +47,7 @@ class ConfigCenter:
 
             QApplication.instance() or QApplication(sys.argv)
             dlg = Dialog(
-                QCoreApplication.translate("file", 'Class Widgets 启动失败w(ﾟДﾟ)w'),
+                QCoreApplication.translate("file", 'Class Widgets Community Edition 启动失败w(ﾟДﾟ)w'),
                 QCoreApplication.translate(
                     "file", '加载默认配置文件失败,请检查文件完整性或尝试重新安装。\n错误信息: {e}'
                 ).format(e=e),

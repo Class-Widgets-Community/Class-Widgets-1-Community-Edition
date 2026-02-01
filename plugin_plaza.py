@@ -123,8 +123,8 @@ class ThreadManager:
 
 
 CONF_PATH = PLUGIN_HOME / "plugins_from_pp.json"
-PLAZA_REPO_URL = "https://raw.githubusercontent.com/Class-Widgets/plugin-plaza/"
-PLAZA_REPO_DIR = "https://api.github.com/repos/Class-Widgets/plugin-plaza/contents/Plugins"
+PLAZA_REPO_URL = "https://raw.githubusercontent.com/Class-Widgets-Community/plugin-plaza/"
+PLAZA_REPO_DIR = "https://api.github.com/repos/Class-Widgets-Community/plugin-plaza/contents/Plugins"
 TEST_DOWNLOAD_LINK = "https://dldir1.qq.com/qqfile/qq/PCQQ9.7.17/QQ9.7.17.29225.exe"
 
 restart_tips_flag = False  # 重启提示
@@ -266,17 +266,17 @@ def install_plugin(parent: Any, p_name: str, data: Dict[str, Any]) -> bool:
         if plugin_ver > SELF_PLUGIN_VERSION:
             content = QCoreApplication.translate(
                 "plugin_plaza",
-                '此插件版本（{plugin_ver}）高于当前设备中 Class Widgets 兼容的插件版本（{SELF_PLUGIN_VERSION}）；\n'
-                '请更新 Class Widgets 后再尝试安装此插件。',
+                '此插件版本（{plugin_ver}）高于当前设备中 Class Widgets Community Edition 兼容的插件版本（{SELF_PLUGIN_VERSION}）；\n'
+                '请更新 Class Widgets Community Edition 后再尝试安装此插件。',
             ).format(plugin_ver=plugin_ver, SELF_PLUGIN_VERSION=SELF_PLUGIN_VERSION)
         else:
             content = (
-                f'此插件版本（{plugin_ver}）低于当前设备中 Class Widgets 兼容的插件版本（{SELF_PLUGIN_VERSION}）；\n'
+                f'此插件版本（{plugin_ver}）低于当前设备中 Class Widgets Community Edition 兼容的插件版本（{SELF_PLUGIN_VERSION}）；\n'
                 f'可能是插件缺乏维护，请联系插件作者更新插件，或在社区（GitHub、QQ群）中提出问题。'
             )
 
         cc = MessageBox(
-            "本插件不兼容当前版本的 Class Widgets",
+            "本插件不兼容当前版本的 Class Widgets Community Edition",
             f"{content}\n\n不建议安装此插件，否则将出现不可预料（包括崩溃、闪退等故障）的问题。",
             parent,
         )  # 兼容性检查窗口
@@ -369,7 +369,7 @@ class PluginDetailPage(MessageBoxBase):  # 插件详情页面
         menu = RoundMenu(parent=self.installButton)
         menu.addActions(
             [
-                Action(fIcon.DOWNLOAD, self.tr("为 Class Widgets 安装"), triggered=self.install),
+                Action(fIcon.DOWNLOAD, self.tr("为 Class Widgets Community Edition 安装"), triggered=self.install),
                 Action(
                     fIcon.LINK,
                     self.tr("下载到本地"),
@@ -840,7 +840,7 @@ class PluginPlaza(MSFluentWindow):
                     self.banners_data = data
                     self.img_list = self.img_links = list(data.keys())
                     self.img_links = [
-                        f'https://raw.githubusercontent.com/Class-Widgets/plugin-plaza/main/Banner/'
+                        f'https://raw.githubusercontent.com/Class-Widgets-Community/plugin-plaza/main/Banner/'
                         f'{img}.png'
                         for img in self.img_links
                     ]
@@ -889,7 +889,7 @@ class PluginPlaza(MSFluentWindow):
         restart_tips_flag = True
         w = InfoBar.info(
             title='需要重启',
-            content='若要应用插件配置，需重启 Class Widgets',
+            content='若要应用插件配置，需重启 Class Widgets Community Edition',
             orient=Qt.Horizontal,
             isClosable=True,
             position=InfoBarPosition.TOP,

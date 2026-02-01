@@ -69,7 +69,7 @@ def qt_message_handler(mode, context, message):  # noqa
 
 
 if config_center.read_conf("Other", "do_not_log") == "0":
-    log_file = LOG_HOME / "ClassWidgets_main_{time}.log"
+    log_file = LOG_HOME / "ClassWidgetsCE_main_{time}.log"
     logger.add(
         log_file,
         rotation="1 MB",
@@ -274,18 +274,18 @@ class TrayIcon(QSystemTrayIcon):
                 schedule_display_name = schedule_name_from_conf
                 if schedule_display_name.endswith('.json'):
                     schedule_display_name = schedule_display_name[:-5]
-                self.setToolTip(f'Class Widgets - "{schedule_display_name}"')
-                logger.debug(f'托盘文字更新: "Class Widgets - {schedule_display_name}"')
+                self.setToolTip(f'Class Widgets Community Edition - "{schedule_display_name}"')
+                logger.debug(f'托盘文字更新: "Class Widgets Community Edition - {schedule_display_name}"')
             except Exception as e:
                 logger.error(f"更新托盘提示时发生错误: {e}")
         else:
-            self.setToolTip("Class Widgets - 未加载课表")
-            logger.debug('托盘文字更新: "Class Widgets - 未加载课表"')
+            self.setToolTip("Class Widgets Community Edition - 未加载课表")
+            logger.debug('托盘文字更新: "Class Widgets Community Edition - 未加载课表"')
 
     def push_update_notification(self, text: str = '') -> None:
         self.setIcon(QIcon(str(LOGO_PATH / "favicon-update.png")))  # tray
         self.showMessage(
-            "发现 Class Widgets 新版本!", text, QIcon(str(LOGO_PATH / "favicon-update.png")), 5000
+            "发现 Class Widgets Community Edition 新版本!", text, QIcon(str(LOGO_PATH / "favicon-update.png")), 5000
         )
 
     def push_error_notification(self, title: str = '检查更新失败!', text: str = '') -> None:
@@ -1069,7 +1069,7 @@ main_mgr = None
 
 
 class SingleInstanceGuard:
-    def __init__(self, lock_name="ClassWidgets.lock"):
+    def __init__(self, lock_name="ClassWidgetsCE.lock"):
         lock_path = QDir.temp().absoluteFilePath(lock_name)
         self.lock_file = QLockFile(lock_path)
         self.lock_acquired = False
@@ -1153,7 +1153,7 @@ def _create_shortcut(
     target_path: str,
     shortcut_path: Path,
     icon_path: Optional[str] = None,
-    description: str = "Class Widgets",
+    description: str = "Class Widgets Community Edition",
 ) -> bool:
     """创建快捷方式"""
     if os.name != 'nt':
@@ -1188,7 +1188,7 @@ def add_shortcut(exe_name: str, icon_path: Optional[str] = None) -> bool:
         logger.error("仅支持 Windows")
         return False
     desktop_path = Path.home() / 'Desktop'
-    shortcut_path = desktop_path / 'Class Widgets.lnk'
+    shortcut_path = desktop_path / 'Class Widgets Community Edition.lnk'
     target_path = str(CW_HOME / exe_name)
     return _create_shortcut(target_path, shortcut_path, icon_path)
 
@@ -1201,7 +1201,7 @@ def add_shortcut_to_startmenu(exe_path: str, icon_path: Optional[str] = None) ->
     start_menu_path = (
         Path(os.environ['APPDATA']) / 'Microsoft' / 'Windows' / 'Start Menu' / 'Programs'
     )
-    shortcut_path = start_menu_path / 'Class Widgets.lnk'
+    shortcut_path = start_menu_path / 'Class Widgets Community Edition.lnk'
     return _create_shortcut(exe_path, shortcut_path, icon_path)
 
 
@@ -1218,8 +1218,8 @@ def add_to_startup() -> bool:
         / 'Programs'
         / 'Startup'
     )
-    shortcut_path = startup_path / 'Class Widgets.lnk'
-    target_path = str(CW_HOME / 'ClassWidgets.exe')
+    shortcut_path = startup_path / 'Class Widgets Community Edition.lnk'
+    target_path = str(CW_HOME / 'ClassWidgetsCE.exe')
     icon_path = str(CW_HOME / 'img' / 'favicon.ico')
     return _create_shortcut(target_path, shortcut_path, icon_path)
 
@@ -1238,7 +1238,7 @@ def remove_from_startup() -> bool:
             / 'Programs'
             / 'Startup'
         )
-        shortcut_path = startup_path / 'Class Widgets.lnk'
+        shortcut_path = startup_path / 'Class Widgets Community Edition.lnk'
         if shortcut_path.exists():
             shortcut_path.unlink()
             logger.success(f"快捷方式删除成功: {shortcut_path}")

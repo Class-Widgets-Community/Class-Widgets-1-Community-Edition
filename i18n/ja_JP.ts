@@ -167,13 +167,13 @@
     <name>ErrorDialog</name>
     <message>
         <location filename="../main.py" line="795"/>
-        <source>Class Widgets 崩溃报告</source>
-        <translation>Class Widgets クラッシュレポート</translation>
+        <source>Class Widgets Community Edition 崩溃报告</source>
+        <translation>Class Widgets Community Edition クラッシュレポート</translation>
     </message>
     <message>
         <location filename="../main.py" line="796"/>
-        <source>抱歉！Class Widgets 发生了严重的错误从而无法正常运行。您可以保存下方的错误信息并向他人求助。若您认为这是程序的Bug，请点击“报告此问题”或联系开发者。</source>
-        <translation>申し訳ありません！Class Widgets に重大なエラーが発生し、正常に動作できませんでした。以下のエラーメッセージを保存して他の人に助けを求めることができます。プログラムのバグだと思われる場合は、「この問題を報告」をクリックするか、開発者にご連絡ください。</translation>
+        <source>抱歉！Class Widgets Community Edition 发生了严重的错误从而无法正常运行。您可以保存下方的错误信息并向他人求助。若您认为这是程序的Bug，请点击“报告此问题”或联系开发者。</source>
+        <translation>申し訳ありません！Class Widgets Community Edition に重大なエラーが発生し、正常に動作できませんでした。以下のエラーメッセージを保存して他の人に助けを求めることができます。プログラムのバグだと思われる場合は、「この問題を報告」をクリックするか、開発者にご連絡ください。</translation>
     </message>
     <message>
         <location filename="../main.py" line="815"/>
@@ -341,13 +341,13 @@
     </message>
     <message>
         <location filename="../view/menu/about.ui" line="118"/>
-        <source>Class Widgets</source>
-        <translation>Class Widgets</translation>
+        <source>Class Widgets Community Edition</source>
+        <translation>Class Widgets Community Edition</translation>
     </message>
     <message>
         <location filename="../view/menu/about.ui" line="128"/>
-        <source>Class Widgets 是一款能显示当前课程的桌面组件App。其提供了直观的图形化课程表编辑和美观的桌面组件。</source>
-        <translation>Class Widgets は現在の授業を表示するﾃﾞｽｸﾄｯﾌﾟｳｨｼﾞｪｯﾄｱﾌﾟﾘで、直感的な時間割編集と美しいｳｨｼﾞｪｯﾄを備えています。</translation>
+        <source>Class Widgets Community Edition 是一款能显示当前课程的桌面组件App。其提供了直观的图形化课程表编辑和美观的桌面组件。</source>
+        <translation>Class Widgets Community Edition は現在の授業を表示するﾃﾞｽｸﾄｯﾌﾟｳｨｼﾞｪｯﾄｱﾌﾟﾘで、直感的な時間割編集と美しいｳｨｼﾞｪｯﾄを備えています。</translation>
     </message>
     <message>
         <location filename="../view/menu/about.ui" line="232"/>
@@ -423,13 +423,13 @@
     </message>
     <message>
         <location filename="../view/menu/about.ui" line="660"/>
-        <source>启动 Class Widgets 时自动检查更新</source>
-        <translation>Class Widgets の起動時に自動でアップデートを確認します</translation>
+        <source>启动 Class Widgets Community Edition 时自动检查更新</source>
+        <translation>Class Widgets Community Edition の起動時に自動でアップデートを確認します</translation>
     </message>
     <message>
         <location filename="../view/menu/about.ui" line="667"/>
-        <source>若启用，Class Widgets 将在启动时联网检查选定的更新通道中是否有最新版本更新。</source>
-        <translation>有効にすると、Class Widgets は起動時にインターネットに接続して、選択されたｱｯﾌﾟﾃﾞｰﾄﾁｬﾈﾙに最新ﾊﾞｰｼﾞｮﾝがあるかどうかを確認します。</translation>
+        <source>若启用，Class Widgets Community Edition 将在启动时联网检查选定的更新通道中是否有最新版本更新。</source>
+        <translation>有効にすると、Class Widgets Community Edition は起動時にインターネットに接続して、選択されたｱｯﾌﾟﾃﾞｰﾄﾁｬﾈﾙに最新ﾊﾞｰｼﾞｮﾝがあるかどうかを確認します。</translation>
     </message>
     <message>
         <location filename="../view/menu/advance.ui" line="152"/>
@@ -745,8 +745,8 @@
     </message>
     <message>
         <location filename="../view/menu/advance.ui" line="1819"/>
-        <source>若启用，Class Widgets 将在程序崩溃时自动忽略，并不再弹出窗口；以免影响教学任务。</source>
-        <translation>有効にすると、Class Widgets はプログラムがクラッシュした際に自動的に無視され、ウィンドウは表示されません。これにより、授業の進行に影響を与えません。</translation>
+        <source>若启用，Class Widgets Community Edition 将在程序崩溃时自动忽略，并不再弹出窗口；以免影响教学任务。</source>
+        <translation>有効にすると、Class Widgets Community Edition はプログラムがクラッシュした際に自動的に無視され、ウィンドウは表示されません。これにより、授業の進行に影響を与えません。</translation>
     </message>
     <message>
         <location filename="../view/menu/advance.ui" line="1890"/>
@@ -1855,8 +1855,8 @@
     </message>
     <message>
         <location filename="../plugin_plaza.py" line="372"/>
-        <source>为 Class Widgets 安装</source>
-        <translation>Class Widgets をインストール</translation>
+        <source>为 Class Widgets Community Edition 安装</source>
+        <translation>Class Widgets Community Edition をインストール</translation>
     </message>
     <message>
         <location filename="../plugin_plaza.py" line="375"/>
@@ -1986,8 +1986,8 @@
     </message>
     <message>
         <location filename="../menu.py" line="2259"/>
-        <source>https://classwidgets.rinlit.cn/docs-user/</source>
-        <translation>https://classwidgets.rinlit.cn/docs-user/</translation>
+        <source>https://docs.cwce.hpdnya.com/about/</source>
+        <translation>https://docs.cwce.hpdnya.com/about/</translation>
     </message>
     <message>
         <location filename="../menu.py" line="2313"/>
@@ -2135,8 +2135,8 @@
     </message>
     <message>
         <location filename="../menu.py" line="3303"/>
-        <source>https://github.com/RinLit-233-shiroko/Class-Widgets</source>
-        <translation>https://github.com/RinLit-233-shiroko/Class-Widgets</translation>
+        <source>https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition</source>
+        <translation>https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition</translation>
     </message>
     <message>
         <location filename="../menu.py" line="3309"/>
@@ -2145,8 +2145,8 @@
     </message>
     <message>
         <location filename="../menu.py" line="3326"/>
-        <source>https://github.com/RinLit-233-shiroko/Class-Widgets?tab=readme-ov-file#致谢</source>
-        <translation>https://github.com/RinLit-233-shiroko/Class-Widgets?tab=readme-ov-file#致谢</translation>
+        <source>https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition?tab=readme-ov-file#致谢</source>
+        <translation>https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition?tab=readme-ov-file#致谢</translation>
     </message>
     <message>
         <location filename="../menu.py" line="3354"/>
@@ -3085,8 +3085,8 @@
         <translation type="vanished">これ以上追加できません o(TヘTo)</translation>
     </message>
     <message>
-        <source>Class Widgets 最多只能添加10个“节点”！</source>
-        <translation type="vanished">Class Widgets は最大で10個の「ノード」しか追加できません！</translation>
+        <source>Class Widgets Community Edition 最多只能添加10个“节点”！</source>
+        <translation type="vanished">Class Widgets Community Edition は最大で10個の「ノード」しか追加できません！</translation>
     </message>
     <message>
         <location filename="../menu.py" line="5877"/>
@@ -3165,8 +3165,8 @@
     </message>
     <message>
         <location filename="../menu.py" line="6237"/>
-        <source>Class Widgets - 设置</source>
-        <translation>Class Widgets - 設定</translation>
+        <source>Class Widgets Community Edition - 设置</source>
+        <translation>Class Widgets Community Edition - 設定</translation>
     </message>
     <message>
         <location filename="../menu.py" line="6319"/>
@@ -3241,8 +3241,8 @@
         <translation type="vanished">Welcome</translation>
     </message>
     <message>
-        <source>Class Widgets</source>
-        <translation type="vanished">Class Widgets</translation>
+        <source>Class Widgets Community Edition</source>
+        <translation type="vanished">Class Widgets Community Edition</translation>
     </message>
     <message>
         <source>v1.2.0.0 LTS</source>
@@ -3261,8 +3261,8 @@
         <translation type="vanished">リリースノート</translation>
     </message>
     <message>
-        <source>https://github.com/Class-Widgets/Class-Widgets/releases</source>
-        <translation type="vanished">https://github.com/Class-Widgets/Class-Widgets/releases</translation>
+        <source>https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition/releases</source>
+        <translation type="vanished">https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition/releases</translation>
     </message>
     <message>
         <source>Documentation</source>
@@ -3277,8 +3277,8 @@
         <translation type="vanished">コミュニティ</translation>
     </message>
     <message>
-        <source>https://github.com/Class-Widgets/Class-Widgets</source>
-        <translation type="vanished">https://github.com/Class-Widgets/Class-Widgets</translation>
+        <source>https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition</source>
+        <translation type="vanished">https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition</translation>
     </message>
 </context>
 <context>
@@ -3763,8 +3763,8 @@
     <name>file</name>
     <message>
         <location filename="../file.py" line="50"/>
-        <source>Class Widgets 启动失败w(ﾟДﾟ)w</source>
-        <translation>Class Widgets 起動失敗w(ﾟДﾟ)w</translation>
+        <source>Class Widgets Community Edition 启动失败w(ﾟДﾟ)w</source>
+        <translation>Class Widgets Community Edition 起動失敗w(ﾟДﾟ)w</translation>
     </message>
     <message>
         <location filename="../file.py" line="51"/>
@@ -4337,14 +4337,14 @@
     </message>
     <message>
         <location filename="../main.py" line="3852"/>
-        <source>Class Widgets 正在运行</source>
-        <translation>Class Widgets が実行中です</translation>
+        <source>Class Widgets Community Edition 正在运行</source>
+        <translation>Class Widgets Community Edition が実行中です</translation>
     </message>
     <message>
         <location filename="../main.py" line="3853"/>
-        <source>Class Widgets 正在运行！请勿打开多个实例，否则将会出现不可预知的问题。
+        <source>Class Widgets Community Edition 正在运行！请勿打开多个实例，否则将会出现不可预知的问题。
 (若您需要打开多个实例，请在“设置”-&gt;“高级选项”中启用“允许程序多开”)</source>
-        <translation>Class Widgets が実行中です！複数のインスタンスを開かないでください。予期しない問題が発生する可能性があります。
+        <translation>Class Widgets Community Edition が実行中です！複数のインスタンスを開かないでください。予期しない問題が発生する可能性があります。
 （複数のインスタンスを開く必要がある場合は、「設定」→「高度なオプション」で「プログラムの多重起動を許可」を有効にしてください）</translation>
     </message>
     <message>
@@ -4437,8 +4437,8 @@
     </message>
     <message>
         <location filename="../splash.py" line="110"/>
-        <source>Class Widgets 启动中...</source>
-        <translation>Class Widgets を起動しています…</translation>
+        <source>Class Widgets Community Edition 启动中...</source>
+        <translation>Class Widgets Community Edition を起動しています…</translation>
     </message>
     <message>
         <location filename="../splash.py" line="161"/>
@@ -4454,11 +4454,11 @@
         <translation type="vanished">フォルダーを開けません</translation>
     </message>
     <message>
-        <source>Class Widgets 在您的系统下不支持自动打开文件夹，请手动打开以下地址：
+        <source>Class Widgets Community Edition 在您的系统下不支持自动打开文件夹，请手动打开以下地址：
 {path}</source>
-        <comment>Class Widgets 在您的系统下不支持自动打开文件夹，请手动打开以下地址：
+        <comment>Class Widgets Community Edition 在您的系统下不支持自动打开文件夹，请手动打开以下地址：
 {path}</comment>
-        <translation type="vanished">Class Widgets は自動でﾌｫﾙﾀﾞｰを開けません。以下のパスを手動で開いてください。</translation>
+        <translation type="vanished">Class Widgets Community Edition は自動でﾌｫﾙﾀﾞｰを開けません。以下のパスを手動で開いてください。</translation>
     </message>
     <message>
         <source>好</source>
@@ -4501,9 +4501,9 @@
         <translation type="vanished">ソフトウェア使用許諾契約書</translation>
     </message>
     <message>
-        <source>此项目 (Class Widgets) 基于 GPL-3.0 许可证授权发布，详情请参阅：</source>
-        <comment>此项目 (Class Widgets) 基于 GPL-3.0 许可证授权发布，详情请参阅：</comment>
-        <translation type="vanished">本ﾌﾟﾛｼﾞｪｸﾄ（Class Widgets）はGPL-3.0ﾗｲｾﾝｽで提供。詳細は以下参照：</translation>
+        <source>此项目 (Class Widgets Community Edition) 基于 GPL-3.0 许可证授权发布，详情请参阅：</source>
+        <comment>此项目 (Class Widgets Community Edition) 基于 GPL-3.0 许可证授权发布，详情请参阅：</comment>
+        <translation type="vanished">本ﾌﾟﾛｼﾞｪｸﾄ（Class Widgets Community Edition）はGPL-3.0ﾗｲｾﾝｽで提供。詳細は以下参照：</translation>
     </message>
     <message>
         <source>打开“{title}”插件文件夹</source>
@@ -4551,9 +4551,9 @@
         <translation type="vanished">ｱﾝｲﾝｽﾄｰﾙ成功</translation>
     </message>
     <message>
-        <source>插件 “{title}” 已卸载。请重启 Class Widgets 以完全移除。</source>
-        <comment>插件 “{title}” 已卸载。请重启 Class Widgets 以完全移除。</comment>
-        <translation type="vanished">ﾌﾟﾗｸﾞｲﾝ「{title}」はアンインストールされました。完全に削除するには Class Widgets を再起動してください。</translation>
+        <source>插件 “{title}” 已卸载。请重启 Class Widgets Community Edition 以完全移除。</source>
+        <comment>插件 “{title}” 已卸载。请重启 Class Widgets Community Edition 以完全移除。</comment>
+        <translation type="vanished">ﾌﾟﾗｸﾞｲﾝ「{title}」はアンインストールされました。完全に削除するには Class Widgets Community Edition を再起動してください。</translation>
     </message>
     <message>
         <source>卸载失败</source>
@@ -4572,9 +4572,9 @@
     </message>
     <message>
         <location filename="../menu.py" line="430"/>
-        <source>Class Widgets 在您的系统下不支持自动打开文件夹，请手动打开以下地址：
+        <source>Class Widgets Community Edition 在您的系统下不支持自动打开文件夹，请手动打开以下地址：
 {path}</source>
-        <translation>Class Widgets は自動でﾌｫﾙﾀﾞｰを開けません。以下のパスを手動で開いてください
+        <translation>Class Widgets Community Edition は自動でﾌｫﾙﾀﾞｰを開けません。以下のパスを手動で開いてください
 {path}</translation>
     </message>
     <message>
@@ -4661,8 +4661,8 @@
     </message>
     <message>
         <location filename="../menu.py" line="793"/>
-        <source>此项目 (Class Widgets) 基于 GPL-3.0 许可证授权发布，详情请参阅：</source>
-        <translation>本ﾌﾟﾛｼﾞｪｸﾄ（Class Widgets）はGPL-3.0ﾗｲｾﾝｽで提供。詳細は以下参照：</translation>
+        <source>此项目 (Class Widgets Community Edition) 基于 GPL-3.0 许可证授权发布，详情请参阅：</source>
+        <translation>本ﾌﾟﾛｼﾞｪｸﾄ（Class Widgets Community Edition）はGPL-3.0ﾗｲｾﾝｽで提供。詳細は以下参照：</translation>
     </message>
     <message>
         <location filename="../menu.py" line="875"/>
@@ -4721,8 +4721,8 @@
     </message>
     <message>
         <location filename="../menu.py" line="1023"/>
-        <source>插件 “{title}” 已卸载。请重启 Class Widgets 以完全移除。</source>
-        <translation>ﾌﾟﾗｸﾞｲﾝ「{title}」はアンインストールされました。完全に削除するには Class Widgets を再起動してください。</translation>
+        <source>插件 “{title}” 已卸载。请重启 Class Widgets Community Edition 以完全移除。</source>
+        <translation>ﾌﾟﾗｸﾞｲﾝ「{title}」はアンインストールされました。完全に削除するには Class Widgets Community Edition を再起動してください。</translation>
     </message>
     <message>
         <location filename="../menu.py" line="1035"/>
@@ -4739,10 +4739,10 @@
     <name>plugin_plaza</name>
     <message>
         <location filename="../plugin_plaza.py" line="267"/>
-        <source>此插件版本（{plugin_ver}）高于当前设备中 Class Widgets 兼容的插件版本（{SELF_PLUGIN_VERSION}）；
-请更新 Class Widgets 后再尝试安装此插件。</source>
-        <translation>このプラグインのバージョン（{plugin_ver}）は、現在のデバイスの Class Widgets が対応しているプラグインバージョン（{SELF_PLUGIN_VERSION}）より新しいです。
-Class Widgets を更新してから、このプラグインのインストールを再試行してください。</translation>
+        <source>此插件版本（{plugin_ver}）高于当前设备中 Class Widgets Community Edition 兼容的插件版本（{SELF_PLUGIN_VERSION}）；
+请更新 Class Widgets Community Edition 后再尝试安装此插件。</source>
+        <translation>このプラグインのバージョン（{plugin_ver}）は、現在のデバイスの Class Widgets Community Edition が対応しているプラグインバージョン（{SELF_PLUGIN_VERSION}）より新しいです。
+Class Widgets Community Edition を更新してから、このプラグインのインストールを再試行してください。</translation>
     </message>
     <message>
         <location filename="../plugin_plaza.py" line="283"/>

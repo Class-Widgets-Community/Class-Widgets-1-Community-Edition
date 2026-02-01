@@ -1,6 +1,6 @@
 [changelog]
 body = """
-## Class Widgets 新版本！{% if version %} ({{ version }}){% endif %}
+## Class Widgets Community Edition 新版本！{% if version %} ({{ version }}){% endif %}
 
 {% for group, commits in commits | group_by(attribute="group") %}
 ### {{ group }}

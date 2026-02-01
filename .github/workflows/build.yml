@@ -497,7 +497,7 @@ jobs:
           uv run --no-dev pyinstaller main.py \
             -w \
             -i ./img/favicon.ico \
-            -n "ClassWidgets" \
+            -n "ClassWidgetsCE" \
             --contents-directory . \
             --add-data "data:data" \
             --add-data "audio:audio" \
@@ -514,16 +514,16 @@ jobs:
           # temp: 修复 ssl 相关 dll 打包错误
           DLLDIR="$(uv run --no-dev python -c 'import sys, os; print(os.path.join(sys.base_prefix, "DLLs"))')"
           echo "[DEBUG] Copying SSL binaries from $DLLDIR"
-          cp -af "$DLLDIR/_ssl.pyd" "dist/ClassWidgets/" || true
-          cp -af "$DLLDIR/libcrypto-1_1-x64.dll" "dist/ClassWidgets/" || true
-          cp -af "$DLLDIR/libssl-1_1-x64.dll" "dist/ClassWidgets/" || true
+          cp -af "$DLLDIR/_ssl.pyd" "dist/ClassWidgetsCE/" || true
+          cp -af "$DLLDIR/libcrypto-1_1-x64.dll" "dist/ClassWidgetsCE/" || true
+          cp -af "$DLLDIR/libssl-1_1-x64.dll" "dist/ClassWidgetsCE/" || true
 
           if [[ "$BUILD_TYPE" == "Release" ]]; then
-            zip_name="ClassWidgets-Windows-${{ matrix.arch }}"
+            zip_name="ClassWidgetsCE-Windows-${{ matrix.arch }}"
           else
             zip_name="Windows-${{ matrix.arch }}_debug-${GITHUB_RUN_ID}"
           fi
-          cd dist && mv ClassWidgets "${zip_name}" && ../zip.exe -r -q "../packages/${zip_name}.zip" "${zip_name}"/* && cd ..
+          cd dist && mv ClassWidgetsCE "${zip_name}" && ../zip.exe -r -q "../packages/${zip_name}.zip" "${zip_name}"/* && cd ..
 
       - name: Build macOS (pyinstaller)
         if: startsWith(matrix.os, 'macos')
@@ -533,7 +533,7 @@ jobs:
           uv run --no-dev pyinstaller main.py \
             -w \
             -i ./img/favicon.icns \
-            -n "Class Widgets" \
+            -n "ClassWidgetsCE" \
             --contents-directory . \
             --add-data "data:data" \
             --add-data "audio:audio" \
@@ -547,13 +547,13 @@ jobs:
             --strip \
             --optimize 2
 
-          cp -R dist/"Class Widgets.app" .
+          cp -R dist/"ClassWidgetsCE.app" .
           if [[ "$BUILD_TYPE" == "Release" ]]; then
-            zip_name="ClassWidgets-macOS-${{ matrix.arch }}"
+            zip_name="ClassWidgetsCE-macOS-${{ matrix.arch }}"
           else
             zip_name="macOS(${{ matrix.arch }})_debug-${GITHUB_RUN_ID}"
           fi
-          zip -r -q "packages/${zip_name}.zip" "Class Widgets.app"
+          zip -r -q "packages/${zip_name}.zip" "ClassWidgetsCE.app"
 
       - name: Build Linux (pyinstaller)
         if: matrix.platform == 'linux-x64'
@@ -562,7 +562,7 @@ jobs:
           uv run --no-dev pyinstaller main.py \
             -w \
             -i ./img/favicon.png \
-            -n "ClassWidgets" \
+            -n "ClassWidgetsCE" \
             --contents-directory . \
             --add-data "data:data" \
             --add-data "audio:audio" \
@@ -577,13 +577,13 @@ jobs:
             --optimize 2
 
           if [[ "$BUILD_TYPE" == "Release" ]]; then
-            zip_name="ClassWidgets-Linux-x64"
+            zip_name="ClassWidgetsCE-Linux-x64"
             rm deb/opt/apps/cn.rinlit.classwidgets/files/.gitkeep
-            cp dist/ClassWidgets/* deb/opt/apps/cn.rinlit.classwidgets/files/ -rvp
+            cp dist/ClassWidgetsCE/* deb/opt/apps/cn.rinlit.classwidgets/files/ -rvp
           else
             zip_name="Linux-x64_debug-${GITHUB_RUN_ID}"
           fi
-          cd dist && mv ClassWidgets "${zip_name}" && zip -r -q "../packages/${zip_name}.zip" "${zip_name}"/* && cd ..
+          cd dist && mv ClassWidgetsCE "${zip_name}" && zip -r -q "../packages/${zip_name}.zip" "${zip_name}"/* && cd ..
 
       - name: Build .deb Package (Linux)
         if: matrix.platform == 'linux-x64' && env.BUILD_TYPE == 'Release'
@@ -619,9 +619,9 @@ jobs:
           $top = Get-ChildItem -Path ./sign-work | Where-Object {$_.PSIsContainer} | Select-Object -First 1
           if ($null -eq $top) { Write-Error "ZIP 内容异常"; exit 1 }
           New-Item -ItemType Directory -Path ./exe-for-signing -Force | Out-Null
-          $exe = Get-ChildItem -Path $top.FullName -Filter "ClassWidgets.exe" -Recurse | Select-Object -First 1
-          if ($null -eq $exe) { Write-Error "未找到待签名的 ClassWidgets.exe"; exit 1 }
-          Copy-Item $exe.FullName -Destination "./exe-for-signing/ClassWidgets.exe" -Force
+          $exe = Get-ChildItem -Path $top.FullName -Filter "ClassWidgetsCE.exe" -Recurse | Select-Object -First 1
+          if ($null -eq $exe) { Write-Error "未找到待签名的 ClassWidgetsCE.exe"; exit 1 }
+          Copy-Item $exe.FullName -Destination "./exe-for-signing/ClassWidgetsCE.exe" -Force
 
       - name: Upload unsigned artifact (Windows)
         if: startsWith(matrix.os, 'windows') && env.IS_SIGNING == 'true'
@@ -631,18 +631,19 @@ jobs:
           name: windows-${{ matrix.arch }}-exe-unsigned
           path: ./exe-for-signing
 
-      - name: Submit signing request (Windows)
-        if: startsWith(matrix.os, 'windows') && env.IS_SIGNING == 'true'
-        id: submit_sign
-        uses: signpath/github-action-submit-signing-request@v2
-        with:
-          api-token: ${{ secrets.SIGNPATH_API_TOKEN }}
-          organization-id: 2e13633d-4e7d-4462-9091-27536751c84c
-          project-slug: Class-Widgets.git
-          signing-policy-slug: release-signing
-          github-artifact-id: ${{ steps.upload_unsigned.outputs.artifact-id }}
-          wait-for-completion: true
-          output-artifact-directory: ./signed-output
+      # TODO: https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition/issues/11
+      # - name: Submit signing request (Windows)
+      #   if: startsWith(matrix.os, 'windows') && env.IS_SIGNING == 'true'
+      #   id: submit_sign
+      #   uses: signpath/github-action-submit-signing-request@v2
+      #   with:
+      #     api-token: ${{ secrets.SIGNPATH_API_TOKEN }}
+      #     organization-id: 2e13633d-4e7d-4462-9091-27536751c84c
+      #     project-slug: Class-Widgets.git
+      #     signing-policy-slug: release-signing
+      #     github-artifact-id: ${{ steps.upload_unsigned.outputs.artifact-id }}
+      #     wait-for-completion: true
+      #     output-artifact-directory: ./signed-output
 
       - name: Extract original build ZIP to dist (Windows)
         if: startsWith(matrix.os, 'windows') && env.IS_SIGNING == 'true'
@@ -654,30 +655,31 @@ jobs:
           Expand-Archive -Path $zip.FullName -DestinationPath ./workdir -Force
           $top = Get-ChildItem -Path ./workdir | Where-Object {$_.PSIsContainer} | Select-Object -First 1
           if ($null -eq $top) { Write-Error "ZIP 内容异常"; exit 1 }
-          New-Item -ItemType Directory -Path ./dist/ClassWidgets -Force | Out-Null
-          Copy-Item -Path (Join-Path $top.FullName '*') -Destination ./dist/ClassWidgets -Recurse -Force
+          New-Item -ItemType Directory -Path ./dist/ClassWidgetsCE -Force | Out-Null
+          Copy-Item -Path (Join-Path $top.FullName '*') -Destination ./dist/ClassWidgetsCE -Recurse -Force
 
-      - name: Replace executable with signed version
-        if: startsWith(matrix.os, 'windows') && env.IS_SIGNING == 'true'
-        shell: pwsh
-        run: |
-          if (Test-Path "./signed-output/ClassWidgets.exe") {
-            New-Item -ItemType Directory -Path ./dist/ClassWidgets -Force | Out-Null
-            Copy-Item "./signed-output/ClassWidgets.exe" "dist/ClassWidgets/ClassWidgets.exe" -Force
-          } else { Write-Error "未找到已签名的可执行文件"; exit 1 }
+      # TODO: https://github.com/Class-Widgets-Community/Class-Widgets-1-Community-Edition/issues/11
+      # - name: Replace executable with signed version
+      #   if: startsWith(matrix.os, 'windows') && env.IS_SIGNING == 'true'
+      #   shell: pwsh
+      #   run: |
+      #     if (Test-Path "./signed-output/ClassWidgetsCE.exe") {
+      #       New-Item -ItemType Directory -Path ./dist/ClassWidgetsCE -Force | Out-Null
+      #       Copy-Item "./signed-output/ClassWidgets.exe" "dist/ClassWidgetsCE/ClassWidgetsCE.exe" -Force
+      #     } else { Write-Error "未找到已签名的可执行文件"; exit 1 }
 
-      - name: Create signed build package (Windows)
-        if: startsWith(matrix.os, 'windows') && env.IS_SIGNING == 'true'
-        shell: pwsh
-        run: |
-          Compress-Archive -Path "dist/ClassWidgets/*" -DestinationPath "packages/ClassWidgets-Windows-${{ matrix.arch }}-signed.zip" -Force
+      # - name: Create signed build package (Windows)
+      #   if: startsWith(matrix.os, 'windows') && env.IS_SIGNING == 'true'
+      #   shell: pwsh
+      #   run: |
+      #     Compress-Archive -Path "dist/ClassWidgets/*" -DestinationPath "packages/ClassWidgets-Windows-${{ matrix.arch }}-signed.zip" -Force
 
-      - name: Upload signed build package (Windows)
-        if: startsWith(matrix.os, 'windows') && env.IS_SIGNING == 'true'
-        uses: actions/upload-artifact@v6
-        with:
-          name: windows-${{ matrix.arch }}-build-signed
-          path: packages/ClassWidgets-Windows-${{ matrix.arch }}-signed.zip
+      # - name: Upload signed build package (Windows)
+      #   if: startsWith(matrix.os, 'windows') && env.IS_SIGNING == 'true'
+      #   uses: actions/upload-artifact@v6
+      #   with:
+      #     name: windows-${{ matrix.arch }}-build-signed
+      #     path: packages/ClassWidgets-Windows-${{ matrix.arch }}-signed.zip
 
   package:
     needs: [prepare, build]
@@ -750,7 +752,7 @@ jobs:
                 echo "[DEBUG] 使用 ${platform} 签名版本 ZIP"
                 for zip_file in "${artifact_cache[$build_signed_key]}"/*.zip; do
                   if [[ -f "$zip_file" ]]; then
-                    target_name="ClassWidgets-Windows-${platform#windows-}_${run_id}.zip"
+                    target_name="ClassWidgetsCE-Windows-${platform#windows-}_${run_id}.zip"
                     process_file "$zip_file" "$target_name" "$platform" "已签名ZIP"
                     break
                   fi
@@ -759,7 +761,7 @@ jobs:
                 echo "[DEBUG] 使用 ${platform} 构建版本 ZIP"
                 for zip_file in "${artifact_cache[$build_key]}"/*.zip; do
                   if [[ -f "$zip_file" ]]; then
-                    target_name="ClassWidgets-Windows-${platform#windows-}_${run_id}.zip"
+                    target_name="ClassWidgetsCE-Windows-${platform#windows-}_${run_id}.zip"
                     process_file "$zip_file" "$target_name" "$platform" "构建ZIP"
                     break
                   fi
@@ -775,10 +777,10 @@ jobs:
                   if [[ -f "$zip_file" ]]; then
                     case "$platform_type" in
                       "macos")
-                        target_name="ClassWidgets-Macos-${platform#macos-}_${run_id}.zip"
+                        target_name="ClassWidgetsCE-Macos-${platform#macos-}_${run_id}.zip"
                         ;;
                       "linux")
-                        target_name="ClassWidgets-Linux-${platform#linux-}_${run_id}.zip"
+                        target_name="ClassWidgetsCE-Linux-${platform#linux-}_${run_id}.zip"
                         ;;
                     esac
                     process_file "$zip_file" "$target_name" "$platform" "构建ZIP"
@@ -790,7 +792,7 @@ jobs:
                 if [[ "$platform_type" == "linux" ]]; then
                   for deb_file in "${artifact_cache[$build_key]}"/*.deb; do
                     if [[ -f "$deb_file" ]]; then
-                      target_name="ClassWidgets-Linux-${platform#linux-}_${run_id}.deb"
+                      target_name="ClassWidgetsCE-Linux-${platform#linux-}_${run_id}.deb"
                       process_file "$deb_file" "$target_name" "$platform" "构建DEB"
                       break
                     fi
@@ -861,7 +863,7 @@ jobs:
       - name: Upload final packages
         uses: actions/upload-artifact@v6
         with:
-          name: ClassWidgets-Packages
+          name: ClassWidgetsCE-Packages
           path: final-packages
 
       - name: Upload provenance artifacts
